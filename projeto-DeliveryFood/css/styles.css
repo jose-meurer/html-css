@@ -1,0 +1,73 @@
+/* ELEMENTS */ 
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/* CLASSES, IDS */
+
+.nav-container {
+    background-color: #CF3527;
+    padding: 20px;
+    height: 140px;
+    width: 100%;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deliveryfood-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deliveryfood-logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.deliveryfood-logo h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.deliveryfood-nav-right {
+ display: flex;
+ align-items: center;
+}
+
+.deliveryfood-nav-right p {
+    display: none;
+}
+
+.deliveryfood-btn-default {
+    padding: 0 20px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    background-color: #F8F8F8F8;
+    color: #6A6A6A;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.deliveryfood-btn-default:hover {
+    background-color: #FFF;
+}
+
+.deliveryfood-btn-default:active {
+    background-color: #F8F8F8;
+}
