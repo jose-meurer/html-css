@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" /> <!-- padrao de caracter -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- padrao de compatibilidade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- como sua pagina sera exibida -->    
+    <title>Loja Top</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+    <header> <!-- header = cabeçalho -->
+      <nav> <!-- nav = navegação-->
+        <h1>Loja Top</h1> <!-- h = titulo-->
+        <ul> <!-- ul = lista desordenada -->
+          <li><a href="#categories">Categorias</a></li> <!-- li = lista ordenada -->
+          <li><a href="#titles">Titulos</a></li>
+          <li><a href="#about">Sobre nós</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main> <!-- main = corpo principal da pagina -->
+      <section id="categories"><!-- deixar ancorado na sessao -->
+        <h2 class="cor-laranja">Categorias</h2>
+        <ul>
+          <li>Fantasia</li>
+          <li>Educação</li>
+        </ul>
+      </section>
+      <section id="titles"> <!-- section = sessao -->
+        <h2>Titulos</h2>
+
+        <div class="card"> <!-- div = container generico -->
+          <img src="img/book1.jpg" alt="O senhor dos aneis" />
+          <div>
+            <h3>O senhor dos aneis</h3>
+            <p>Navegue por essa grade aventura</p>  <!-- p = paragrafo -->
+            <p><span>R$</span> 389.99</p> 
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="img/book2.jpg" alt="Rails for dummies" />
+          <div>
+            <h3>Rails for dummies</h3>
+            <p>Aprenda esta fantastica ferramenta</p>
+            <p><span>R$</span> 250.49</p> <!-- span = div inline-->
+          </div>
+        </div>
+        
+      </section>
+      <section id="about">
+        <h2>Sobre nós</h2>
+        <h3>O que fazemos</h3>
+        <p>Ajudamos pessoas a se tornarem desenvolvedores profissionais</p>
+        <h3>Saiba mais</h3>
+
+        <!-- iframe = inserir conteúdos externos em uma página -->  <!-- Shift + alt + f = formatar-->
+        <iframe
+          width="320"
+          height="180"
+          src="https://www.youtube.com/embed/CV5mehlxNtM"
+          title="Funções lambdas java"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <h2>Siga-nos</h2>
+          <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+        
+        <div>
+          <h2>Entre em contato</h2>
+          <address> <!-- address = destinatarios em geral -->
+            Escreva para nosso
+            <a href="mailto:josewmeurer@gmail.com" target="_blank">email</a>.<br />Até a proxima.
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
