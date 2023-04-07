@@ -1,27 +1,37 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
+  box-sizing: border-box;
+  margin: 0px;
 }
 
 body {
-    background-color: #BBB;
+  background-color: #bbb;
 }
 
 .container-blocos {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .bloco {
-    width: 280px;
-    height: 200px;
-    margin: 20px;
-    background-color: #FFFFFF;
+  width: 280px;
+  height: 200px;
+  margin: 20px;
+  background-color: #ffffff;
 }
 
 .bloco:hover {
-    border: 2px solid red;
+  /* border: 10px solid blue; */
+  cursor: url(https://cdn-icons-png.flaticon.com/128/4341/4341050.png) 40 50, wait;
 }
+
+.bloco:active {
+  background-color: #ffffff8c;
+  cursor: url(https://cdn-icons-png.flaticon.com/128/4341/4341025.png), auto;
+}
+
+p::selection {
+  background-color: #fd00e454;
+  color: rgb(7, 7, 7);
+}  

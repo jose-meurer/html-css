@@ -74,5 +74,9 @@ footer {
 
 .footer-company-container img {
     width: 200px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+}
+
+.footer-social-container a {
+    margin: 0 3px;
 }

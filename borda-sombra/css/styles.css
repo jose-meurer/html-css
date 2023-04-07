@@ -1,56 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .generic-section {
-    min-height: 300px;
-    padding: 40px 20px;
+  min-height: 300px;
+  padding: 40px 20px;
 }
 
 .bg-gray {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .generic-section h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .generic-section p {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .form-card {
-    background-color: #fff;
-    padding: 20px;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid #999;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #999;
+  
 }
 
 .form-card form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 form input {
-    border: none;
-    background-color: #ddd;
-    height: 50px;
-    margin-bottom: 20px;
+  border: none;
+  background-color: #ddd;
+  min-height: 45px;
+  margin-bottom: 20px;
 }
 
 form input:focus {
-    outline: 1px solid #999;
+  outline: 1px solid #999;
+  background-color: rgb(201, 238, 212);
+  border-radius: 12px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+} */
+
+/* Define a aparência do "botão" da barra de rolagem */
+/* ::-webkit-scrollbar-thumb {
+  background-color: #9dff00;
+  border-radius: 10px;
+} */
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: aqua;
+} */
+
+/* Define a aparência do fundo da área de rolagem */
+/* ::-webkit-scrollbar-track {
+  background-color: #d66b07;
+} */
