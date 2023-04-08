@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap');
+
+:root {
+    --color-white:#fff;
+    --color-dark-red:#772E25;
+    --color-light-red:#C44536;
+    --color-light-gray:#EDDDD4;
+    --color-light-blue:#197278;
+    --color-dark-blue:#283D3B;
+    --color-gray:#5e5e5e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', sans-serif;
+}
+
+a, a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--color-light-red);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header span {
+    display: block;
+    text-align: center;
+    color: var(--color-light-gray);
+    font-weight: 700;
+    font-size: 42px;
+}
+
+nav {
+    background-color: var(--color-dark-red);
+    height: 35px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    height: 120px;
+    background-color: var(--color-light-red);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Classes, Ids */
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.categories a{
+    font-size: 20px;
+    color: var(--color-light-gray);
+}
+
+#pizzas {
+    background-color: var(--color-light-gray);
+    padding: 20px 20px 40px 20px;
+}
+
+.title-container-pizza {
+    font-size: 36px;
+    text-align: center;
+    color: var(--color-light-blue);
+}
+
+.pizza-card {
+    display: flex;
+    margin-top: 40px;
+}
+
+.pizza-card img {
+    height: 200px;
+    width: 200px;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.pizza-card-description {
+    background-color: var(--color-white);
+    border-radius: 0px 12px 12px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.pizza-card-description h3 {
+    font-size: 26px;
+    color: var(--color-gray);
+}
+
+.pizza-card-description p {
+    font-size: 18px;
+}
+
+.pizza-card-description h4 {
+    font-size: 26px;
+    color: var(--color-light-blue);
+}
+
+#comments {
+    background-color: var(--color-white);
+    padding: 20px 20px 40px 20px;
+}
+
+#comments h2 {
+    font-size: 36px;
+    color: var(--color-gray);
+    text-align: center;
+}
+
+.comment-card {
+    background-color: var(--color-light-blue);
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.comment-card p {
+    color: var(--color-light-gray);
+    font-size: 18px;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card a, .footer-card address {
+    color: var(--color-light-gray);
+    font-size: 18px;
+}
