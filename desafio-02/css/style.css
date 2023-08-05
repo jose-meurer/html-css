@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin-bottom: 56px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.padding-container {
+    padding: 15px 20px;
+}
+
+.name-title {
+    text-align: center;
+    background-color: #d4cdc5;
+    color:#243a69;
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.name-description {
+    text-align: center;
+}
+
+.section-title {
+    background-color: #f4f4f2;
+    color: #243a69;
+    border-bottom: 2px solid #243a69;
+    margin-bottom: 15px;
+}
+
+.experience-card {
+    margin-top: 15px;
+}
+
+.title-card {
+ margin-bottom: 5px;
+}
+
+.subtitle-card {
+    margin-bottom: 5px;
+}
+
+.descritpion-card {
+    margin-bottom: 5px;
+}
+
+.qualification-card {
+    margin-top: 15px;
+}
+
+.qualification-card .subtitle-card {
+    font-size: 14px;
+}
+
+.list-courses {
+    list-style-position: inside;
+}
+
+.li-courses {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.courses-card {
+    margin-top: 15px;
+}
