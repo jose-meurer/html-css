@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alkatra", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-container {
+    background-image: url(../images/bg-1.jpg);
+    width: 100%;
+    padding: 20px;
+    background-size: cover;
+    background-position: right top;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.nav-links li {
+    margin-left: 10px;
+}
+
+.item-links {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #38353583;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.title-header-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.title-header {
+    font-size: 64px;
+    color: #fff;
+    text-shadow: 2px 2px 15px #000;
+    
+}
+
+.description-header-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.description-header {
+    display: inline-block;
+    font-size: 18px;
+    padding: 14px;
+    background-color: #0000008e;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    border-radius: 6px;
+}
+
+.section-courses-container {
+    background-color: #c4c0c0;
+    padding: 20px;
+}
+
+.card-course {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+} 
+
+.title-course {
+    font-size: 24px;
+    background-color: #eceaea;
+    padding: 10px;
+    border-bottom: 1px solid #696868;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.description-course {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.know-more {
+    padding: 10px;
+    background-color: #c4c0c0;
+    border-radius: 4px;
+    display: inline-block;
+    color: #0329cf;
+}
+
+.footer-container {
+    background-color: #656663;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.description-footer {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+}
