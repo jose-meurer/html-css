@@ -1,0 +1,30 @@
+.container {
+  border: 2px solid red;
+  padding: 16px;
+  width: 300px;
+}
+
+.item {
+    background-color: blueviolet;
+    margin-bottom: 15px;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 22px;
+    display: inline-block;
+    padding: 20px;
+}
+
+
+.fit-content .item {
+    width: fit-content;
+}
+
+.min-content .item {
+    width: min-content;
+}
+
+.max-content .item {
+    width: max-content;
+}
