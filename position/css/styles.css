@@ -1,0 +1,42 @@
+#div1 {
+  background-color: rgba(255, 0, 0, 0.5);
+  padding: 10px;
+  width: 90%;
+  height: 200px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#div2 {
+  background-color: rgba(0, 255, 0, 0.5);
+  padding: 10px;
+  width: 80%;
+  height: 100px;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+#div3 {
+  background-color: rgba(0, 0, 255, 0.5);
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+/* Relative permite que possa mover o elemento para os lados, 
+    sem que ele saia do fluxo normal do documento. */
+
+/* Absolute permite posicionar o elemento de forma absoluta em relacao ao objeto 
+    pai que seja diferente de static, sendo assim removido do fluxo normal do documento. */
+
+/* Fixed permite posicionar o elemento de forma fixa em relacao ao viewport, ou seja,
+    fixado na janela do navegador, sendo assim removido do fluxo natural do documento. */
+
+/* Sticky permite que seja fixado um elemento em um lugar até que ele atinja um certo ponto
+    na viewport, e depois role com o resto da página. */
