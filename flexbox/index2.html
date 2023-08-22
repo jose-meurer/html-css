@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: thistle;
+      }
+      .group1 {
+        display: flex;
+        border: 4px solid red;
+        height: 500px;
+        justify-content: center;
+        /* align-items: center; */ /* Usar com nowrap. */
+        align-content: center; /* Usar com wrap */
+        flex-wrap: wrap;
+      }
+
+      .group1 div {
+        background-color: bisque;
+        width: 180px;
+        height: 150px;
+        margin: 15px;
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="group1">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>
+        <div class="div5">div5</div>
+        <div class="div6">div6</div>
+        <div class="div7">div7</div>
+      </div>
+    </main>
+  </body>
+</html>
