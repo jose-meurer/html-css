@@ -6,7 +6,8 @@
     <title>Document</title>
     <style>
       body {
-        margin-bottom: 500px;
+        margin: 0 auto 500px;
+        max-width: 600px;
       }
 
       .flexbox {
@@ -164,7 +165,8 @@
 
       .flex-container10 .div2 {
         order: 2;
-        align-self: center;
+        align-self: center; /* Mesma coisa do align-items, mas mudando a posicao do elemento e nao dos filhos, 
+                              sempre respeitando o eixo main definido */
       }
 
       .flex-container10 .div1 {
