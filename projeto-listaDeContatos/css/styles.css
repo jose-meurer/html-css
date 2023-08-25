@@ -33,7 +33,7 @@ body {
 
 .list-wrapper {
     width: fit-content; /* responsive */
-    max-width: 100%;    /* responsive */
+    max-width: 100%;   /* responsive */
     max-height: 400px;
     overflow-y: hidden; /* Colocar o scroll dentro de uma div, para o border radius funcionar
                             tambem no scrool, e nao ficar com os cantos retos */

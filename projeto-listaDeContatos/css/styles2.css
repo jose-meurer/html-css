@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a0ded6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.main-title {
+    color: #1693a5;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.list-item {
+    padding-top: 130px;
+    background-color: #fff;
+    margin: 5px;
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/thumb01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.list-item:hover {
+    translate: 5px -5px;
+    box-shadow: -5px 5px 6px #0004ff;
+}
+
+.list-item__image img {
+    width: 90px;
+    border-radius: 50%;
+
+}
+
+.list-item__content {
+    text-align: center;
+    padding: 5px 10px 10px 10px;
+}
+
+.list-item__name {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.list-item__email {
+    color: #727171;
+}
+
+.list-item__action {
+    background-color: #d1d0d0;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.7;
+
+}
