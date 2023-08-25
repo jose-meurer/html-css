@@ -32,8 +32,8 @@ body {
 }
 
 .list-wrapper {
-    width: 100%;
-    max-width: 500px;
+    width: fit-content; /* responsive */
+    max-width: 100%;    /* responsive */
     max-height: 400px;
     overflow-y: hidden; /* Colocar o scroll dentro de uma div, para o border radius funcionar
                             tambem no scrool, e nao ficar com os cantos retos */
@@ -52,7 +52,6 @@ body {
 .list-item {
     display: flex;
     padding: 15px;
-    justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     /* flex-wrap: wrap; */
 }
@@ -65,6 +64,8 @@ body {
 
 .list-item__content {
     align-self: center;
+    padding: 15px 20px;
+    flex-grow: 1;   /* responsive */
 }
 
 .list-item__name {
@@ -83,6 +84,7 @@ body {
     gap: 16px;
     align-items: center;
     opacity: 0;
+    
 }
 
 .list-item:hover {
