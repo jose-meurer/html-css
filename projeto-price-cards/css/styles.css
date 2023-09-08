@@ -1,0 +1,138 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    line-height: 1.4;
+    min-height: 100vh;
+    background-color: #0C0F14;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header a:hover {
+    color:#cbe300;
+}
+
+.header {
+    background-color: #191d24;
+    border-radius: 10px;
+    color: #fff;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header__logo {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.header__nav ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.main-title {
+    padding: 40px 15px;
+}
+
+.main-title h1{
+    color: #fff;
+    text-align: center;
+    font-size: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pricing {
+ padding: 15px;
+}
+
+.pricing__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.pricing-card {
+    background-color: #21262D;
+    /* border: 1px solid #cbe300; */
+    box-shadow: 2px 2px 3px #cbe300;
+    border-radius: 8px;
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card__title {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 2px solid #cbe300;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.pricing-card__price {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.pricing-card__price span {
+    font-size: 28px;
+}
+
+.pricing-card__list {
+    margin-bottom:35px;
+    color: #b5b5b5;
+    list-style-position: inside;
+    line-height: 1.8;
+    flex: 1;
+    list-style-type: disc;
+}
+
+.pricing-card__list li::marker {
+    color: #cbe300;
+}
+
+.pricing-card__cta {
+    color: #000;
+    text-align: center;
+    background-color: #cbe300; 
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.pricing-card__cta:hover {
+    outline: 2px solid #cbe300; 
+    background-color: transparent;
+    color: #cbe300;
+}
+
+.pricing-card:hover{
+    transform: scale(1.02);
+}
