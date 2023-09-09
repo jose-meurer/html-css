@@ -156,7 +156,3 @@ a.header__nav--active{
     outline: 2px solid #5ae25a;
     color: #5ae25a;
 }
-
-.pricing-card__cta:active .pricing-card {
-    box-shadow: 2px 2px 3px red;
-}
