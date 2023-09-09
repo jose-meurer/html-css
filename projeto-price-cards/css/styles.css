@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap");
 
 * {
     padding: 0;
@@ -9,7 +10,7 @@ html, body {
     line-height: 1.4;
     min-height: 100vh;
     background-color: #0C0F14;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Alkatra, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -30,7 +31,6 @@ a {
 .header {
     background-color: #191d24;
     border-radius: 10px;
-    color: #fff;    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,12 +41,27 @@ a {
     text-transform: uppercase;
     font-size: 28px;
     font-weight: 700;
+    color: #fff; 
+    letter-spacing: 2px;
 }
 
 .header__nav ul{
     display: flex;
     gap: 10px;
     list-style: none;
+}
+
+.header__nav a {
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff; 
+    font: 18px;
+}
+
+a.header__nav--active{
+    background-color: #cbe300;
+    color: #000;
+    pointer-events: none;
 }
 
 .main-title {
@@ -81,6 +96,10 @@ a {
     width: 300px;
     display: flex;
     flex-direction: column;
+}
+
+.pricing-card:hover{
+    transform: scale(1.02);
 }
 
 .pricing-card__title {
@@ -133,6 +152,11 @@ a {
     color: #cbe300;
 }
 
-.pricing-card:hover{
-    transform: scale(1.02);
+.pricing-card__cta:active {
+    outline: 2px solid #5ae25a;
+    color: #5ae25a;
+}
+
+.pricing-card__cta:active .pricing-card {
+    box-shadow: 2px 2px 3px red;
 }
