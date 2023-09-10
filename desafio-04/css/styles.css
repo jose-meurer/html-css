@@ -14,6 +14,11 @@ main {
   background-size: cover;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 .container {
   width: 100%;
   max-width: 960px;
@@ -45,8 +50,8 @@ main {
 }
 
 .courses {
-    background-color: #ffffff87;
-    padding: 15px;
+  background-color: #ffffff87;
+  padding: 15px;
 }
 .courses-list {
   list-style-type: none;
@@ -55,6 +60,10 @@ main {
   justify-content: center;
   align-content: center;
   gap: 15px;
+}
+
+.courses-list__card:active {
+  opacity: 0.7;
 }
 
 .courses-list__image {
