@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unidade de Medida</title>
+
+    <style>
+      html {
+        font-size: 62.5%; /* 62.5% = 10px */
+      }
+
+      h1 {
+        font-size: 5em; /* 5em = 50px */
+      }
+
+      p {
+        font-size: 2em; /* 2EM = 20px */
+      }
+
+      b {
+        font-size: 1.5em; /* 30px, pois EM sempre puxa o tamanho do elemento pai,
+                                    que no caso é a tag p, que é 20px, 20px . 1.5 = 30px,
+                                    caso queira puxar a referencia do html, usar REM */
+      }
+
+      .percentage-margin {
+        background-color: yellow;
+        height: 400px;
+        width: 60%;
+        padding: 10px;
+      }
+
+      h2 {
+        background-color: orange;
+        padding-top: 35%; /* Tanto margin quanto padding em %, é sempre pelo tamanho do witdh, nunca pelo height. */
+        width: 50%;
+        font: 3rem;
+      }
+
+      h3 {
+        font-size: 3em;
+      }
+
+      h3 {
+        background-color: red;
+        margin: 0;
+        padding: 1em; /* com base na font-size, se a font-size vale 20px, 1em do padding vale 20px. */
+        font-size: 5em;
+        display: inline-block;
+      }
+
+      .viewport-container{
+        width: 600px;
+        height: 600px;
+        background-color: rgb(21, 80, 80);
+        font-size: 4rem;
+        color: #fff;
+      }
+
+      .viewport{
+        background-color: rgba(41, 131, 97, 0.76);
+        /* width: 90%; */
+        /* height: 75%; */
+        width: 100vw;
+        height: 75vh;
+
+        /* Em %, é levando em consideracao o tamanho do elemento pai, que neste caso é 600px por 600px, mas em VH e VW, é levando
+          em consideracao o tamanho total do viewport, nao respeitando os limites do elemento pai, 
+          que neste caso o viewport do navegador seria 1300px por 755px */
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Unidade de Medida</h1>
+
+      <p>
+        Lorem
+        <b
+          >ipsum dolor sit amet consectetur, adipisicing elit. Quod distinctio
+          excepturi rerum</b
+        >
+        eveniet perferendis tenetur.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nisi
+        unde nesciunt earum exercitationem quis pariatur! Corporis, similique
+        consequuntur tenetur tempore, recusandae eos nesciunt nisi sunt iste
+        officiis veritatis iusto commodi, id nam labore explicabo? Id corrupti
+        voluptate aut amet possimus quam ullam fugit excepturi libero,
+        aspernatur vero modi, optio nemo fuga numquam laboriosam reiciendis
+        dolores.
+      </p>
+
+      <div class="percentage-margin">
+        <h2>Margin com %</h2>
+      </div>
+
+      <h3>padding com EM</h3>
+
+      <div class="viewport-container">
+        container pai
+        <div class="viewport">
+          container filho
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
