@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis css</title>
+
+    <style>
+        :root {
+            --header-height: 10rem;
+            --main-min-height: 100vh;
+            --footer-height: 9rem;
+            --color-header: #ff00c823;
+            --color-main: #f5f5dc;
+            --color-footer: #00f;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        header{
+            width: 100%;
+            background-color: var(--color-header);
+            height: var(--header-height);
+            font-size: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        main{
+            min-height: calc(var(--main-min-height) - var(--header-height) - var(--footer-height) );
+            background-color: var(--color-main);
+            font-size: 2rem;
+            margin-top: var(--header-height);
+        }
+
+        footer{
+            height: var(--footer-height);
+            font-size: 2rem;
+            background-color: var(--color-footer);
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main</main>
+    <footer>Footer</footer>
+</body>
+</html>
