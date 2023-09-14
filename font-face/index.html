@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font face</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Handlee&family=Splash&display=swap");
+
+      @font-face {
+        font-family: nadia;
+        src: local("Nadia Serif"), local("Nadia-Serif"),
+          url(fonts/nadia/nadia-serif.ttf) format("truetype"),
+          url(fonts/nadia/nadia-serif.woff) format("wolff"),
+          url(fonts/nadia/nadia-serif.svg) format("svg");
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: nadia, verdana, sans-serif;
+      }
+
+      h1 {
+        font-size: 13rem;
+        color: white;
+        padding: 0.5em;
+        text-align: center;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        background-color: cadetblue;
+
+        font-family: "Splash", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Font-face</h1>
+  </body>
+</html>
