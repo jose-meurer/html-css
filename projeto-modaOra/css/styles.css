@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 
 
 :root {
     --color-header-background:#162028;
+    --color-header-text: #fff;
     --color-menu-text:#425564;
     --color-text:#555;
     --color-about-brackground:#003d52;
     --color-footer-background:#0b171f;
     --color-footer-text:#6f8597;
+
+    --header-height:6rem;
 }
 
 * {
@@ -19,7 +23,14 @@
 
 html {
     font-size: 62.5%;
-    font-family: Roboto, tahoma, arial sans-serif;
+    font-family: Roboto, tahoma, arial, sans-serif;
+}
+
+body {
+    width: 100vw;
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: 0 auto;
 }
 
 a {
@@ -31,4 +42,47 @@ a {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#header {
+    background-color: var(--color-header-background);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.header__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header__logo {
+    color: var(--color-header-text);
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 3rem;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+}
+
+.header__item {
+    font-size: 1.8rem;
+    color: var(--color-menu-text);
+    letter-spacing: 1px;
+}
+
+.header__item:hover {
+    color: var(--color-header-text);  
+}
+
+.top-photo img{
+    width: 1024px;
+    display: block;
 }
