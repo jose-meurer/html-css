@@ -4,8 +4,10 @@
 
 
 :root {
+    --font-title: 'Viaoda Libre', cursive;
+
     --color-header-background:#162028;
-    --color-header-text: #fff;
+    --color-white-text: #fff;
     --color-menu-text:#425564;
     --color-text:#555;
     --color-about-brackground:#003d52;
@@ -24,10 +26,11 @@
 html {
     font-size: 62.5%;
     font-family: Roboto, tahoma, arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     max-width: 1024px;
     min-height: 100vh;
     margin: 0 auto;
@@ -42,8 +45,17 @@ a {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+footer {
+    height: 50px;
+    background-color: var(--color-footer-background);
+    color: var(--color-footer-text);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 #header {
@@ -51,6 +63,8 @@ a {
     height: var(--header-height);
     display: flex;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header__flex {
@@ -61,9 +75,9 @@ a {
 }
 
 .header__logo {
-    color: var(--color-header-text);
-    font-family: 'Viaoda Libre', cursive;
-    font-size: 3rem;
+    color: var(--color-white-text);
+    font-family: var(--font-title);
+    font-size: 3.5rem;
 }
 
 .header__nav ul {
@@ -73,16 +87,98 @@ a {
 }
 
 .header__item {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--color-menu-text);
     letter-spacing: 1px;
 }
 
 .header__item:hover {
-    color: var(--color-header-text);  
+    color: var(--color-white-text);  
 }
 
 .top-photo img{
-    width: 1024px;
+    width: 100%;
     display: block;
+}
+
+#portfolio {
+    padding: 64px 100px;
+    color: var(--color-text);
+}
+
+.portfolio__title {
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.portfolio__description {
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: center;
+}
+
+.gallery__card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    color: var(--color-text);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.gallery__card-image {
+    width: 280px;
+}
+
+.gallery__card-image img {
+    width: 100%;
+    display: block;
+}
+
+.gallery__card-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.gallery__card-description h2 {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.gallery__card-description p {
+    font-size: 1.6rem;
+}
+
+#about {
+    background-color: var(--color-about-brackground);
+    background-image: url(../images/bg_detalhe.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--color-white-text);
+    padding: 64px;
+}
+
+.about__title {
+    font-family: var(--font-title);
+    font-size: 5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.about__description {
+    width: 75%;
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: start;
 }
