@@ -8,7 +8,7 @@
   --color-header-menu-hover: #3b3b3b;
   --color-courses-card-border: #a0a0a0;
   --color-courses-card-text: #575757;
-  --color-about-text: #fafafa;
+  --color-light-text: #fafafa;
   --color-herobanner-grandient: linear-gradient(white, rgb(255, 255, 84));
 }
 
@@ -38,6 +38,12 @@ a {
   color: inherit;
   text-decoration: none;
   font-size: 1.6rem;
+}
+
+address {
+  color: inherit;
+  font-size: 1.6rem;
+  font-style: italic;
 }
 
 h1 {
@@ -212,7 +218,7 @@ h3 {
 .about .container {
   display: flex;
   justify-content: space-between;
-  color: var(--color-about-text);
+  color: var(--color-light-text);
   gap: 10rem;
   padding-top: 7rem;
 }
@@ -232,4 +238,28 @@ h3 {
 
 .about__title {
   margin-bottom:5rem;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 500px;
+}
+
+.contacts__address {
+  text-align: end;
+  padding: 2rem;
+}
+
+.footer .container {
+  color: var(--color-light-text);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer a{
+  color: var(--color-primary);
+}
+
+.footer a:hover {
+  text-decoration: line-through;
 }
