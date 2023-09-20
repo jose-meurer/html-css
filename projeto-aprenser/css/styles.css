@@ -8,7 +8,7 @@
   --color-header-menu-hover: #3b3b3b;
   --color-courses-card-border: #a0a0a0;
   --color-courses-card-text: #575757;
-
+  --color-about-text: #fafafa;
   --color-herobanner-grandient: linear-gradient(white, rgb(255, 255, 84));
 }
 
@@ -207,4 +207,29 @@ h3 {
     text-align: center;
     margin-top: 7rem;
     margin-bottom: 7rem;
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-about-text);
+  gap: 10rem;
+  padding-top: 7rem;
+}
+
+.about__image img {
+  width: 100%;
+  display: block;
+}
+
+.about__image {
+  width: 45%;
+}
+
+.about__content {
+  flex:1;
+}
+
+.about__title {
+  margin-bottom:5rem;
 }
