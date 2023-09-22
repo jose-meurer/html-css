@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        background-color: #a3c0c2;
+        font-family: cursive;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #f1f1f1;
+        text-shadow: 2px 2px 4px #000000aa;
+        margin-bottom: 15px;
+      }
+
+      form {
+        width: 450px;
+        background-color: #f1f1f1;
+        border-radius: 6px;
+        box-shadow: 3px 3px 10px #333;
+        padding: 30px 30px 46px;
+        font-size: 1.25rem;
+        text-align: center;
+      }
+
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border: none;
+      }
+
+      legend {
+        margin-bottom: 20px;
+      }
+
+      input {
+        text-align: center;
+        font-size: 1.15rem;
+        padding: 0.75em 0.75em 0.35em 0.75em;
+        border: none;
+        /* border-radius: 6px; */
+        border-bottom: 2px solid #ccc;
+        background-color: inherit;
+      }
+
+      input::placeholder {
+        color: #5e5e5e;
+      }
+
+      input:hover {
+        background-color: #e4e4e4;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      input[type="submit"] {
+        cursor: pointer;
+        color: #5e5e5e;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="#" method="get">
+      <!-- post -->
+      <fieldset>
+        <legend>Entre com seus dados de acesso</legend>
+        <input type="email" placeholder="Digite seu email" name="email" id="email" required autofocus />
+
+        <input type="password" placeholder="Digite sua senha" name="password" id="password" required />
+
+        <input type="submit" value="Entrar" />
+      </fieldset>
+    </form>
+  </body>
+</html>
