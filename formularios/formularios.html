@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" Formularios="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-width: 768px;
+        min-height: 100vh;
+        background-color: #e0f0f0;
+      }
+
+      form {
+        font-size: 1.23em;
+        width: 20rem;
+        padding: 15px;
+        background-color: beige;
+        margin: 0 auto;
+        border: 2px dashed black;
+        text-align: center;
+      }
+
+      fieldset {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        text-align: center;
+        padding: 0.25rem;
+      }
+
+      input[type="submit"] {
+        background-color: yellow;
+        padding: 5px 15px;
+        font-size: 0.755em;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://127.0.0.1:5500/formularios/formularios.html" method="get">
+      <!-- post -->
+      <fieldset>
+        <legend>Faça seu cadastro</legend>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autofocus /> <br />
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="password" required /> <br />
+      </fieldset>
+      <input type="submit" value="Cadastrar" />
+    </form>
+  </body>
+</html>
