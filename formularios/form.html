@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body style="width: 400px; margin: 0 auto;">
+    <form action="">
+        <fieldset style="display: flex; flex-direction: column; gap: 16px;">
+            <legend>Introdução</legend>
+            <input type="text" placeholder="Texto">
+
+            <input type="email" placeholder="Email">
+
+            <input type="number" placeholder="Quantidade de filhos" min="0" max="14">
+
+            <input type="date" min="2023-08-15" max="2023-12-21">
+
+            <div>   
+                <p style="display: inline;">Possui atividade extra?</p>
+
+                <input type="radio" name="extra" id="extra_sim">
+                <label for="extra_sim">Sim</label>
+
+                <label>
+                    <input type="radio" name="extra">Nao
+                </label>
+
+                <!-- Duas formas de atingir o mesmo resultado -->
+            </div>
+            
+        </fieldset>
+        <input style="display: block; margin: 5px auto 0px;" type="submit" value="Enviar dados">
+
+    </form>
+</body>
+</html>
