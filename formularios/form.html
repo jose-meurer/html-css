@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body style="width: 400px; margin: 0 auto;">
+  </head>
+  <body style="width: 400px; margin: 0 auto">
     <form action="">
-        <fieldset style="display: flex; flex-direction: column; gap: 16px;">
-            <legend>Introdução</legend>
-            <input type="text" placeholder="Texto">
+      <fieldset style="display: flex; flex-direction: column; gap: 16px">
+        <legend>Introdução</legend>
+        <input type="text" placeholder="Texto" name="text" />
 
-            <input type="email" placeholder="Email">
+        <input type="email" placeholder="Email" name="email" />
 
-            <input type="number" placeholder="Quantidade de filhos" min="0" max="14">
+        <input type="number" placeholder="Quantidade de filhos" min="0" max="14" name="children" />
 
-            <input type="date" min="2023-08-15" max="2023-12-21">
+        <input type="date" min="2023-08-15" max="2023-12-21" name="date" />
 
-            <div>   
-                <p style="display: inline;">Possui atividade extra?</p>
+        <div>
+          <p style="display: inline">Possui atividade extra?</p>
 
-                <input type="radio" name="extra" id="extra_sim">
-                <label for="extra_sim">Sim</label>
+          <!-- Duas formas de atingir o mesmo resultado -->
 
-                <label>
-                    <input type="radio" name="extra">Nao
-                </label>
+          <input type="radio" name="extra" id="extra_sim" value="true" />
+          <label for="extra_sim">Sim</label>
 
-                <!-- Duas formas de atingir o mesmo resultado -->
-            </div>
-            
-        </fieldset>
-        <input style="display: block; margin: 5px auto 0px;" type="submit" value="Enviar dados">
+          <label><input type="radio" name="extra" value="false" />Nao</label>
+        </div>
+      </fieldset>
 
+      <fieldset>
+        <legend>Área de interesse</legend>
+
+        <div>
+          <label><input type="checkbox" name="language" value="html" />HTML</label>
+          <label><input type="checkbox" name="language" value="css" />CSS</label>
+          <label><input type="checkbox" name="language" value="javascript" />Javascript</label>
+          <label><input type="checkbox" name="language" value="java" />Java</label>
+        </div>
+      </fieldset>
+
+      <input style="display: block; margin: 5px auto 0px" type="submit" value="Enviar dados" />
     </form>
-</body>
+  </body>
 </html>
