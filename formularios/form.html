@@ -5,39 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
   </head>
-  <body style="width: 400px; margin: 0 auto">
+  <body style="width: 400px; margin: 0 auto; background-color: beige">
     <form action="">
       <fieldset style="display: flex; flex-direction: column; gap: 16px">
         <legend>Introdução</legend>
+
+        <!-- data text -->
         <input type="text" placeholder="Texto" name="text" />
-
         <input type="email" placeholder="Email" name="email" />
-
         <input type="number" placeholder="Quantidade de filhos" min="0" max="14" name="children" />
-
         <input type="date" min="2023-08-15" max="2023-12-21" name="date" />
 
+        <!-- radio -->
         <div>
           <p style="display: inline">Possui atividade extra?</p>
 
           <!-- Duas formas de atingir o mesmo resultado -->
-
           <input type="radio" name="extra" id="extra_sim" value="true" />
           <label for="extra_sim">Sim</label>
 
           <label><input type="radio" name="extra" value="false" />Nao</label>
         </div>
+
       </fieldset>
 
       <fieldset>
         <legend>Área de interesse</legend>
 
+        <!-- checkbox -->
         <div>
-          <label><input type="checkbox" name="language" value="html" />HTML</label>
-          <label><input type="checkbox" name="language" value="css" />CSS</label>
-          <label><input type="checkbox" name="language" value="javascript" />Javascript</label>
-          <label><input type="checkbox" name="language" value="java" />Java</label>
+          <label><input type="checkbox" name="interest" value="html" />HTML</label>
+          <label><input type="checkbox" name="interest" value="css" />CSS</label>
+          <label><input type="checkbox" name="interest" value="javascript" />Javascript</label>
+          <label><input type="checkbox" name="interest" value="java" />Java</label>
         </div>
+
+        <!-- select/option -->
+        <div>
+          <label for="language-select">Seleciona uma linguagem</label>
+          <select name="language" id="language-select" required multiple size="7">
+            <option value="" hidden>Selecione a linguagem</option>
+            <optgroup label="Front-end">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">Javascript</option>
+            </optgroup>
+            <optgroup label="Back-end">
+              <option value="cobol">COBOL</option>
+              <option value="java">Java</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- datalist/option -->
+        <div>
+          <label
+            >Selecione uma linguagem
+            <input type="text" list="languageList" name="languageList" />
+          </label>
+          <datalist id="languageList">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="Javascript"></option>
+            <option value="PHP"></option>
+            <option value="Java"></option>
+            <option value="COBOL"></option>
+          </datalist>
+        </div>
+
       </fieldset>
 
       <input style="display: block; margin: 5px auto 0px" type="submit" value="Enviar dados" />
