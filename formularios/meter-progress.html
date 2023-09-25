@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meter and Progress</title>
+  </head>
+  <body>
+    <h1>Meter</h1>
+
+    <label for="gas">Nível do combustivel</label> <br>
+    <meter id="gas" min="0" max="100" low="30" high="60" value="20" optimum="65"></meter>
+    <!-- Pode ser entendido como, por exemplo, uma régua ou o medido de tanque de um carro, onde o low é gasolina baixa, acima de high é bom, e acima de optiomum o ideal  -->
+
+    <h1>Progress</h1>
+
+    <label>Porcentagem da tarefa <br>
+      <progress max="100" value="50">50%</progress>
+      <!-- O texto do progress não é exibido ao usuário, mas recomendação da documentação apresentar esse valor, caso o browser seja antiga e não tenha suporte ou acontece algum problema ao exibir a barra de progressão -->
+    </label>
+  </body>
+</html>
