@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <style>
+
+        div {
+            background-color: beige;
+            padding: 1px;
+        }
+
+         div + div {
+            background-color: aqua;
+            padding: 15px;
+         }
+
+         li + li {
+            background-color: cadetblue;
+            margin-top: 1rem;
+         } 
+
+    </style>
+  </head>
+  <body>
+    
+    <div>
+        div 1
+        <div>div 1.1</div>
+        <div>1.2
+            <div>div 1.2.1</div>
+        </div>
+    </div>
+    <div>
+        div 2
+        <div>1.2.1</div>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <details style="background-color: rgb(34, 34, 56); color: white;">
+            <summary style="padding: 15px; cursor: progress; background-color: beige; color: black;">Summary 1</summary>
+                <ul>
+                    <li>li 1</li>
+                    <li>li 2</li>
+                    <li>li 3</li>
+                    <li>li 4</li>
+                </ul>  
+        </details>
+    </div>
+  </body>
+</html>

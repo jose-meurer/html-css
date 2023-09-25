@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
   </head>
-  <body style="width: 400px; margin: 0 auto; background-color: beige">
+  <body style="width: 450px; margin: 0 auto; background-color: beige">
     <form action="">
       <fieldset style="display: flex; flex-direction: column; gap: 16px">
         <legend>Introdução</legend>
@@ -15,6 +15,8 @@
         <input type="email" placeholder="Email" name="email" />
         <input type="number" placeholder="Quantidade de filhos" min="0" max="14" name="children" />
         <input type="date" min="2023-08-15" max="2023-12-21" name="date" />
+
+        <!-- placeholder nunca deve substituir o label por questoes de acessibilidade, deve ser usado apenas como dica do que dever ser informado -->
 
         <!-- radio -->
         <div>
@@ -26,7 +28,6 @@
 
           <label><input type="radio" name="extra" value="false" />Nao</label>
         </div>
-
       </fieldset>
 
       <fieldset>
@@ -72,10 +73,71 @@
             <option value="COBOL"></option>
           </datalist>
         </div>
+      </fieldset>
 
+      <!-- textarea/file -->
+      <fieldset>
+        <legend>Mensagem</legend>
+        <textarea name="msg" cols="50" rows="8" style="resize: none" maxlength="20">123</textarea>
+        <br />
+        <textarea cols="50" rows="8" style="resize: none" disabled>
+CONTRATO DE DIREITOS AUTORAIS 
+          REGRA 1
+          REGRA 2
+      </textarea
+        >
+        <br />
+
+        <input type="email" name="contract-email" value="meuemail@email.com" disabled />
+        <label> <input type="checkbox" name="contract-checkbox" required checked/>Li e aceito o contrato </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Outras tags</legend>
+        <br />
+
+        <input type="file" />
+        <br />
+
+        <input type="hidden" value="#123--b" />
+        <br />
+
+        <input type="tel" value="xx 9 9999-1223" />
+        <br />
+
+        <input type="url" value="https://google.com" />
+        <br />
+
+        <input type="search" value="Como criar tag input" />
+        <br />
+
+        <input type="range" value="10" min="0" max="20" step="5"/>
+        <br />
+
+        <input type="time" value="21:00" />
+        <br />
+
+        <input type="color" value="#0000ff" />
+        <br />
+
+        <!-- Mais tags e informacoes em https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input -->
       </fieldset>
 
       <input style="display: block; margin: 5px auto 0px" type="submit" value="Enviar dados" />
+      <br />
+      <!-- a diferenca entre os dois, o button pode ser personalizado, pois o valor nao fica dentro da tag value -->
+      <button type="submit"><em>Mandar com tag button</em></button>
+
+      <br />
+      <br />
+
+      <input type="button" value="button" />
+      <br />
+      <!-- Aqui sao dois botoes que nao fazem nada, sao criados para serem usados pelo javascript -->
+      <button type="button"><b>Botão</b></button>
+
+      <br />
+      <br />
     </form>
   </body>
 </html>
