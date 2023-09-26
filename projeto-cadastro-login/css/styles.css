@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --text-font-base: 'Roboto', arial, sans-serif;
+  --color-primary: #3c68b8;
+  --color-base-btn-active: #304d85;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.4;
+  font-family: var(--text-font-base);
+  min-height: 100vh;
+  background-image: linear-gradient(var(--color-primary), #1c3158);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-form {
+    background-color: #fff;
+    padding: 3rem;
+    width: 50rem;
+    box-shadow: -10px 0 0 rgba(0, 0, 0, 0.384);
+}
+
+.base-fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 3rem;
+    padding: 1px;
+}
+
+.base-legend {
+    font-size: 3.6rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.base-label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+.base-input {
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 2px solid var(--color-primary);
+    padding: 1rem 1rem 1rem 0;
+
+    transition: padding-left 0.5s linear 0s;
+}
+
+.base-input:focus {
+    padding-left: 1rem;
+}
+
+.base-input:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: -2px;
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginRegisterWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.submit-btn {
+    font-size: 2rem;
+    background-color: var(--color-primary);
+    padding: 1rem 1.75rem;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.363);
+    border-radius: 4px;
+}
+
+.submit-btn:active {
+    background-color: var(--color-base-btn-active);
+}
+
+.login__register {
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.login__register:active {
+    color: var(--color-base-btn-active);
+}
+
+.resetPassword-btn {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+}
