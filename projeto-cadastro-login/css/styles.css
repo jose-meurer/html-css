@@ -22,7 +22,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
   font-family: var(--text-font-base);
   min-height: 100vh;
@@ -49,15 +49,14 @@ body {
 
 .base-legend {
     font-size: 3.6rem;
+    font-weight: 300;
     color: var(--color-primary);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .base-label {
     font-size: 1.2rem;
     text-transform: uppercase;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
 }
 
 .base-input {
@@ -65,6 +64,7 @@ body {
     border: none;
     border-bottom: 2px solid var(--color-primary);
     padding: 1rem 1rem 1rem 0;
+    margin-bottom: 2rem;
 
     transition: padding-left 0.5s linear 0s;
 }
@@ -109,13 +109,12 @@ body {
 }
 
 .login__register {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 1rem 1rem;
     text-decoration: none;
     font-weight: 700;
     color: var(--color-primary);
     text-transform: uppercase;
-
 }
 
 .login__register:active {
@@ -123,10 +122,16 @@ body {
 }
 
 .form-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--color-primary);
 }
 
 .register__text-login {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.resetPassword__text {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #757575;
 }
