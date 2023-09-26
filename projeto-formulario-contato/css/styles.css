@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=McLaren&display=swap");
+
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: McLaren, arial, cursive, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background-color: #168aad;
+  color: #d9ed92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+    width: 90%;
+    min-width: 45rem;
+    max-width: 56rem;
+    background-color: #1a759f;
+    padding: 1em;
+    border: 2px solid #34a0a4;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    font-size: 1.3em;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+label {
+    letter-spacing: 1px;
+}
+
+input, textarea {
+    background-color: #184e77;
+    border: 2px solid transparent;
+    border-bottom-color: #34a0a4;
+    padding: 0.75em;
+    margin: 0.5em 0 2.5em 0;
+    color: inherit;
+    outline: 0;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b5e48c9a;
+}
+
+/* input:invalid, textarea:invalid {
+    background-color:red;
+}
+
+input:valid, textarea:valid {
+    background-color:green;
+} */
+
+input:invalid:focus, textarea:invalid:focus {
+    border-bottom: 2px solid #ff000d;
+}
+
+input:valid:focus, textarea:valid:focus {
+    border-bottom: 2px solid #0ec72a;
+}
+
+input:focus, textarea:focus {
+    background-color: #0d1b2a;
+    color: #a9d6e5;
+}
+
+textarea {
+    resize: none;
+}
+
+.wrapperbtn {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn {
+    font-size: 1.2em;
+    background-color: #184e77;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border: none;
+    border: 2px solid #34a0a4;
+    letter-spacing: 2px;
+}
+
+.btn:active {
+    background-color: #34a0a4;
+    border: 2px solid #184e77;
+}
