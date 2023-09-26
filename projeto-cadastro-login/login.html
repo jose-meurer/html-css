@@ -9,23 +9,24 @@
   </head>
   <body>
     <main>
-      <form action="" class="login__form base-form">
-        <fieldset class="login__fieldse base-fieldset">
-          <legend class="login__legend base-legend">Login</legend>
+      <form action="" class=" base-form">
+        <fieldset class="base-fieldset">
+          <legend class="base-legend">Login</legend>
 
-          <label class="login__user-label base-label" for="user">Usuário</label>
-          <input class="login__user-input base-input" type="text" name="user" id="user" required minlength="3"/>
+          <label class="base-label" for="user">Usuário</label>
+          <input class="base-input" type="text" name="user" id="user" required minlength="3"/>
 
-          <label class="login__password-label base-label" for="password">Senha</label>
-          <input class="login__password-input base-input" type="password" name="password" id="password" required minlength="8"/>
+          <label class="base-label" for="password">Senha</label>
+          <input class="base-input" type="password" name="password" id="password" required minlength="8"/>
         </fieldset>
 
         <div class="buttonsWrapper">
+            <!-- Poderia por uma classe com margin-right no regiter, mas achei mais facil usar 2 divs e display flex -->
           <div class="loginRegisterWrapper">
-            <input class="login__submit submit-btn" type="submit" value="Login" />
+            <input class="submit-btn" type="submit" value="Login" />
             <a class="login__register" href="register.html">Cadastre-se</a>
-          </div>
-          <a class="login__reset-password resetPassword-btn" href="reset-password.html">Esqueci minha senha</a>
+          </div> 
+          <a class="form-link" href="reset-password.html">Esqueci minha senha</a>
         </div>
       </form>
     </main>

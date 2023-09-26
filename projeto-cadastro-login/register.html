@@ -9,23 +9,22 @@
   </head>
   <body>
     <main>
-      <form action="">
-        <fieldset>
-          <legend>Cadastre-se</legend>
+      <form action="" class="base-form">
+        <fieldset class="base-fieldset">
+          <legend class="base-legend">Cadastre-se</legend>
 
-          <label for="user">Usuário</label>
-          <input type="text" name="user" id="user" />
+          <label class="base-label" for="user">Usuário</label>
+          <input class="base-input" type="text" name="user" id="user" required/>
 
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <label class="base-label" for="email">Email</label>
+          <input class="base-input" type="email" name="email" id="email" required/>
 
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
+          <label class="base-label" for="password">Password</label>
+          <input class="base-input" type="password" name="password" id="password" required/>
         </fieldset>
-        <div>
-          <input type="submit" value="Cadastre-se" />
-          <p>Já possui cadasto?</p>
-          <a href="login.html">Faça login</a>
+        <div class="buttonsWrapper">
+          <input class="submit-btn" type="submit" value="Cadastre-se" />
+            <p class="register__text-login">Já possui cadasto? <a class="form-link" href="login.html">Faça login</a></p>   
         </div>
       </form>
     </main>
