@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo classes child</title>
+
+    <style>
+      p:first-child {
+        color: red; /* Seleciona a tag P se for o primeiro filho */
+      }
+
+      p:last-child {
+        color: orange;  /* Seleciona a tag P se for o ultimo filho */
+      }
+
+      p:nth-child(3) {
+        background-color: blue; /* Seleciona a (3) terceira tag P */
+      }
+
+      p:first-of-type {
+        background-color: green; /* Seleciona a primeira tag do tipo P */
+      }
+
+      p:last-of-type {
+        background-color: red; /* Seleciona a ultima tag do tipo P */
+      }
+
+      p:nth-of-type(2) {
+        text-decoration: underline; /* Seleciona a (2) segunda tag do tipo P */
+      }
+
+      p:nth-of-type(3n - 2) { 
+        text-align: right;
+        /* Seleciona a tag do tipo P que seja a (3 * (n++) - 2) comecando com n=0 */
+      }
+
+      li:nth-child(3n + 1) {
+        background-color: red; 
+        /* Seleciona a tag LI se ela for a (3*(n++)-2) comecando com n=0 */
+      }
+
+      ol :first-child { /* Seleciona o primeiro filho da tag ol */
+        font-size: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>primeiro paragrafo</p>
+      <p>segundo paragrafo</p>
+      <p>terceiro paragrafo</p>
+    </div>
+
+    <hr />
+
+    <div>
+      <br />
+      <a href="#">primeiro link</a>
+      <p>primeiro paragrafo</p>
+      <br />
+      <p>segundo paragrafo</p>
+      <p>terceiro paragrafo</p>
+      <span>esta é só uma span</span>
+      <p>quarto paragrafo</p>
+    </div>
+
+    <!-- https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child -->
+
+    <ol>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+      <li>Item de lista</li>
+    </ol>
+  </body>
+</html>
