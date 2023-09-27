@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletores Compostos</title>
+
+
+    <style>
+      article {
+        outline: 4px solid green;
+      }
+
+      article a {
+        color: red; /* Seleciona todas as tags A dentro do article */
+      }
+
+      article a > b {
+        color: green; /* Seleciona todas as tags B que sejam filhas diretas da tag A que estejam dentro do article */
+      }
+
+      h3 + p {
+        background-color: yellow; /* Seleciona a proxima tag P que seja irmão da tag H3 */
+      }
+      hr ~ p {
+        border: 4px dashed orange; /* Seleciona todas as proximas tags P que sejam irmãos da tag HR */
+      }
+
+      .destaque {
+        padding-left: 2rem; /* Tag P com classe qualquer */
+      }
+
+      article p:not(.destaque) {
+        padding: 2rem; /* Seleciona todas as tags P que nao tenha a classe .destaque e que estejam dentro do article */
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/cssref/css_selectors.php -->
+
+    <p>
+      paragrafo <a href="#"> link falso em <b>negrito</b> </a>
+    </p>
+
+    <article>
+      <p>paragrafo antes do título com <b>negrito</b></p>
+
+      <h3>titulo</h3>
+      <p>paragrafo qualquer</p>
+
+      <h3>titulo</h3>
+      <hr />
+
+      <p>
+        paragrafo <a href="#">link falso em<b> negrito</b> </a>
+      </p>
+
+      <p class="destaque">
+        paragrafo <a href="#">link falso em<b> negrito</b> </a>
+      </p>
+
+      <p>
+        paragrafo <a href="#">link falso em<b> negrito</b> </a>
+      </p>
+
+    </article>
+
+    <p>
+      paragrafo <a href="#">link falso em<b> negrito</b></a>
+    </p>
+
+  </body>
+</html>
