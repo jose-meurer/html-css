@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de atributos</title>
+
+    <style>
+
+        a {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        a[href="#"]:not(.link-ok) { 
+            color: red; /* Seleciona todas as tags A, que tenha o atributo href="#" e que nao tenham a classe .link-ok */
+        }
+
+        a[href^="http"] {
+            outline: 4px solid red; /* ^ Seleciona todas as tags A, que o href começem com http */
+        }
+
+        a[href$=".pdf"] {
+            text-decoration: line-through; /* $ Seleciona todas as tags A, que o href termine com .pdf */
+        }
+
+        a[target="_blank"] {
+            color: orange; /* Seleciona todas as tags A, que tenha o atributo target="_blank" */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a class="link-ok" href="#">Link falso</a></li>
+        <li><a target="_blank" href="https://www.google.com">Link externo</a></li>
+        <li><a href="pasta.arquivo.pdf">Link pdf</a></li>
+        <li><a href="seletores-compostos.html">Link interno</a></li>
+    </ul>
+
+</body>
+</html>
