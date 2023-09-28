@@ -1,55 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
 
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-        div {
-            background-color: beige;
-            padding: 1px;
-        }
+      p {
+        height: 400px;
+        border: 0.8em darkviolet;
+        border-style: double;
+        margin: 1em 0;
+        padding: 1.4em;
+        background-image: url("https://static.educalingo.com/img/pt/800/montanha.jpg");
+        font: 900 1.2em sans-serif;
+        text-decoration: underline;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
 
-         div + div {
-            background-color: aqua;
-            padding: 15px;
-         }
+      .border-box {
+        background-origin: border-box;
+      }
+      .padding-box {
+        background-clip: padding-box;
+      }
+      .content-box {
+        background-clip: content-box;
+      }
 
-         li + li {
-            background-color: cadetblue;
-            margin-top: 1rem;
-         } 
-
+      .text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0.2);
+      }
     </style>
   </head>
   <body>
-    
-    <div>
-        div 1
-        <div>div 1.1</div>
-        <div>1.2
-            <div>div 1.2.1</div>
-        </div>
-    </div>
-    <div>
-        div 2
-        <div>1.2.1</div>
-    </div>
-
-    <br>
-    <br>
-    <div>
-        <details style="background-color: rgb(34, 34, 56); color: white;">
-            <summary style="padding: 15px; cursor: progress; background-color: beige; color: black;">Summary 1</summary>
-                <ul>
-                    <li>li 1</li>
-                    <li>li 2</li>
-                    <li>li 3</li>
-                    <li>li 4</li>
-                </ul>  
-        </details>
-    </div>
+    <main>
+      <p class="border-box">The background extends behind the border.</p>
+      <p class="padding-box">The background extends to the inside edge of the border.</p>
+      <p class="content-box">The background extends only to the edge of the content box.</p>
+      <p class="text">The background is clipped to the foreground text.</p>
+    </main>
   </body>
 </html>
