@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:has</title>
+
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 60%;
+      }
+
+      th, td {
+        border-bottom: 2px solid teal;
+        padding: 0.7rem;
+      }
+
+      th {
+        background-color: antiquewhite;
+        text-align: left;
+      }
+
+      tr:nth-child(2n) { /* 2n == even */
+        background-color: beige;
+      }
+
+      tr:nth-child(2n + 1) { /* 2n+1 == odd */
+        background-color: aquamarine;
+      }
+
+      tr:hover {
+        background-color: yellow;
+      }
+      
+      td:has(input[type="checkbox"]) {
+        text-align: center;
+      }
+
+      /* td:has(input[type="checkbox"]) {
+        background-color: yellow;
+        border-bottom: 2px solid rgb(255, 0, 0);
+        border-right: 2px solid red;
+        text-align: center;
+      } */
+
+      tr:has(td:first-child input[type="checkbox"]:checked) {
+        background-color: violet;
+      }
+
+      div :first-child {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Nome</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Jane Smith</td>
+          <td>Janesmith@email.com</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Michael Johnson</td>
+          <td>michaeljhonson@email.com</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Sarah Williams</td>
+          <td>sarahwilliams@email.com</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>David Brown</td>
+          <td>davidbrown@email.com</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>Jhon Doe</td>
+          <td>Johndoe@email.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quos, dolor temporibus soluta ea molestiae saepe hic culpa doloremque totam
+      accusamus explicabo, ab sed consectetur aliquid repellat quo aspernatur minus exercitationem voluptatibus sapiente nulla provident. Voluptatibus
+      quo error aliquam reprehenderit accusamus, veritatis animi impedit delectus eveniet nihil deserunt, facere labore?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quos, dolor temporibus soluta ea molestiae saepe hic culpa doloremque totam
+      accusamus explicabo, ab sed consectetur aliquid repellat quo aspernatur <a href="#">Clique aqui para saber mais</a> minus exercitationem
+      voluptatibus sapiente nulla provident. Voluptatibus quo error aliquam reprehenderit accusamus, veritatis animi impedit delectus eveniet nihil
+      deserunt, facere labore?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quos, dolor temporibus soluta ea molestiae saepe hic culpa doloremque totam
+      accusamus explicabo, ab sed consectetur aliquid repellat quo aspernatur minus exercitationem voluptatibus sapiente nulla provident. Voluptatibus
+      quo error aliquam reprehenderit accusamus, veritatis animi impedit delectus eveniet nihil deserunt, facere labore?
+    </p>
+
+    <div>
+        <div>
+            <h1>Olá
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorem similique ex ratione quas delectus, quaerat nulla aut ut non perferendis cum id aliquid necessitatibus, iusto nisi voluptas, odio harum?</p>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, doloremque.</p>
+        <h1>Lorem ipsum dolor sit amet.
+        </h1>
+    </div>
+  </body>
+</html>
