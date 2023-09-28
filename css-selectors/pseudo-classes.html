@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classes</title>
+
+    <style>
+      button + button {
+        margin-top: 1rem;
+      }
+
+      input ~ input {
+        display: block;
+        margin-top: 0.5rem;
+      }
+
+      button {
+        background-color: cadetblue;
+        color: white;
+        border: none;
+        padding: 2rem;
+        margin-left: 1rem;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+      }
+
+      p:empty::before {
+        content: "Paragrafo vazio???";
+      }
+
+      a:focus,
+      a:hover {
+        background-color: orange;
+      }
+
+      input[type="text"]:read-write {
+        background-color: rgba(255, 0, 0, 0.342);
+        border: none;
+        padding: 1rem;
+      }
+
+      input[type="text"]:disabled {
+        background-color: blue;
+      }
+
+      input[type="text"]:enabled {
+        outline: 4px solid green;
+      }
+
+      input[type="text"]:read-only:not(:disabled) {
+        background-color: yellow;
+      }
+
+      input[type="text"]::placeholder { /* Pseudo-elemento */
+        color: blue;
+      }
+
+      input[type="text"]:placeholder-shown { /* Pseudo-classe */
+        /* Quando o placeholder estiver visivel, adiciona um background-color */
+        background-color: orangered;
+      }
+
+      p:only-child {
+        background-color: orange;
+      }
+
+      p:read-write {
+        border-bottom: 2px solid green;
+      }
+
+      :target {
+        outline: 5px dashed red;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="top" href="#title">Vai para o titulo</a>
+    <hr />
+
+    <button>Vai</button>
+    <button disabled>Vai disabled</button>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestias reiciendis maiores ex aperiam quia magnam dolorum sed? Incidunt,
+      explicabo!
+    </p>
+
+    <p></p>
+    <p></p>
+
+    <ul>
+      <li><a href="#">link falso</a></li>
+      <li><a href="#">link falso</a></li>
+      <li><a href="#">link falso</a></li>
+      <li><a href="#">link falso</a></li>
+    </ul>
+
+    <!-- tabindex faz o elemento receber foco do tab, usado 99% das vez com o valor 0, se utilizar valores altos, será o primeiro elemento da pagina a receber o foco -->
+    <p tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio!</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio!</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio!</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio!</p>
+    <p tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio!</p>
+
+    <form action="">
+      <input type="text" value="valor inicial" />
+      <input type="text" value="valor" disabled />
+      <input type="text" value="valor" readonly />
+      <input type="text" placeholder="placeholder" />
+    </form>
+
+    <div>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, <b>soluta.</b></p>
+    </div>
+    <hr />
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, dolorum!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, dolorum!</p>
+      <p contenteditable="true">Paragrafo editável</p>
+      <!-- Torna o paragrafo editavel, mas precisa de js para ter algum uso -->
+    </div>
+
+    <h1 id="title">Titulo</h1>
+    <a href="#top">Vai para cima</a>
+  </body>
+</html>

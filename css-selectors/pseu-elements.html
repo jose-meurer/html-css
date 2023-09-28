@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements</title>
+
+    <style>
+        body {
+            width: 40%;
+        }
+
+        P::selection {
+            background-color: orange;
+        }
+
+        p::first-letter {
+            color: red;
+            font-size: 1.5rem;
+        }
+
+        P::first-line {
+            color: blue;
+            font-size: 1.2;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores veritatis nisi porro possimus reprehenderit facilis fugiat delectus aliquam molestias obcaecati itaque nemo molestiae ipsam assumenda, quo aperiam, magnam unde.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores veritatis nisi porro possimus reprehenderit facilis fugiat delectus aliquam molestias obcaecati itaque nemo molestiae ipsam assumenda, quo aperiam, magnam unde.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores veritatis nisi porro possimus reprehenderit facilis fugiat delectus aliquam molestias obcaecati itaque nemo molestiae ipsam assumenda, quo aperiam, magnam unde.</p>
+</body>
+</html>
