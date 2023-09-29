@@ -41,7 +41,17 @@
         }
 
         .div5 .destaque {
-            transform: skew(-35deg)
+            transform: skew(45deg)
+        }
+
+        .div6 .destaque {
+            transform: translate(50px) rotate(45deg);
+            transform-origin: left top;
+        }
+        /* A ordem dos atributos faz diferenca, pois o rotate rotaciona o main axis, funcionando parecido com o flexbox*/
+        .div7 .destaque {
+            transform: rotate(10deg) translate(0px);
+            transform-origin: right top;
         }
     </style>
 </head>
@@ -72,6 +82,18 @@
     </div>
 
     <div class="div5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
+    </div>
+
+    <div class="div6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
+    </div>
+
+    <div class="div7">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
         <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus.</p>
