@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus components</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="wrapperContainer-title justify-right">
+          <a href="#">
+            <img class="header__image" src="images/perfil.png" alt="Imagem de perfil" />
+          </a>
+        </div>
+
+        <ul class="header__list">
+          <li><a class="header__list-item" href="index.html">Home</a></li>
+          <li><a class="header__list-item" href="tipografia.html">Tipografia</a></li>
+          <li><a class="header__list-item" href="cards.html">Cards</a></li>
+          <li><a class="header__list-item" href="lists.html">Listas</a></li>
+          <li><a class="header__list-item" href="forms.html">Formulário</a></li>
+          <li><a class="header__list-item" href="buttons.html">Botões</a></li>
+          <li><a class="header__list-item" href="tables.html">Tabelas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- header end -->
+
+    <main class="main">
+      <div class="container">
+        <div class="wrapperContainer-title">
+          <h1 class="main__title">Meus Componentes</h1>
+        </div>
+
+        <article class="wrapperContainer highlight">
+          <h2>Tipografia</h2>
+          <p>
+            A Tipografia transmite nossas definições de tamanhos e espaçamento e deve ser utilizada respeitando a hierarquia dos elementos na
+            interface
+          </p>
+        </article>
+
+        <section>
+          <h3>Elementos</h3>
+
+          <article>
+            <h4>Textos</h4>
+            <p>Esse texto esta escrito em <b>negrito</b> e esse texto é um <strong>texto forte</strong>.</p>
+            <p>Esse texto está em <i>itálico</i> e este está <em>com ênfase</em>.</p>
+            <p>Isto é um texto escrito de forma <u class="underline">erada</u> e isso é um <a href="#"> link</a>.</p>
+          </article>
+
+          <article>
+            <h4>Sobrescrito e subscrito</h4>
+            <p>3<sup>2</sup> é igual à 9</p>
+            <p>a fórmula da água é H<sub>2</sub>O</p>
+          </article>
+
+          <article>
+            <h4>Abreviações</h4>
+
+            <p>Para criar páginas na web precisamos aprender sobre <abbr title="HiperText Markup Language">HTML</abbr>.</p>
+
+            <p>
+              Para criar páginas na web precisamos aprender sobre <a href="#html-dfn"><abbr title="HiperText Markup Language">HTML</abbr></a> .
+            </p>
+            <p>
+              O <dfn id="html-dfn"> <abbr title="HiperText Markup Language">HTML</abbr> </dfn> é a principal linguagem da web onde podemos incluir
+              nosso conteúdo de forma semântica
+            </p>
+          </article>
+
+          <article>
+            <h4>Citações</h4>
+
+            <!-- blockquote significa uma longa citação -->
+            <blockquote>
+              <p>O ruim não é ter trabalho. O ruim é ter de trabalhar</p>
+              <cite>Seu Madruga</cite> <!-- Usar cite para colocar a referencia -->
+            </blockquote>
+
+            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+              O Elemento HTML &lt;blockquote&gt; (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação.
+              <cite>MDN</cite>
+            </blockquote>
+
+            <!-- Usar a tag q indica que o texto incluído é uma pequena citação embutida -->
+            <p>Segundo o Seu Madruga <q>A vingança nunca é plena, mata a alma e envenena</q>.</p> 
+
+            <p>
+              De acordo com o site da Mozilla,
+              <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox foi lançado em 2004 e se tornou um grande sucesso.</q>
+            </p>
+            
+            <!-- O cite é usado para marcar o título de um trabalho criativo citado  -->
+            <p>O filme <cite>Escola do Rock</cite> contém várias músicas antigas.</p>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

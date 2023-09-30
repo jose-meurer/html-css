@@ -4,6 +4,8 @@
     --color-text: #e7e7e7;
     --color-main-background: #444856;
 
+    --size-perfil-image:13rem;
+
 }
 
 *{
@@ -33,17 +35,42 @@ a {
 
 h2, h3, h4, h5, h6 {
     color: var(--color-primary);
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
-p {
-    margin: 0.5rem 0;
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+article h4 ~ p, blockquote {
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--color-primary);
+    line-height: 1.8;
+}
+
+.underline {
+    text-decoration: red wavy underline;
 }
 
 .container {
-    width: 100%;
-    max-width: 960px;
-    padding: 9rem 4rem;
+    max-width: 1200px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
 }
 
 .wrapperContainer {
@@ -55,15 +82,26 @@ p {
     background-color: var(--color-secondary);
 }
 
+/* Pensar em solucao melhor para linhar imagem perfil com titulo da sessao */
+.wrapperContainer-title {
+    height: 22rem;
+    display: flex;
+    align-items: center;
+}
+
+.justify-right {
+    justify-content: flex-end;
+}
+
 .header__nav {
-    padding: 6rem 2rem 0;
+    padding: 0 2rem;
     text-align: end;
     width: 100%;
 }
 
 .header__image {
-    max-width: 13rem;
-    margin-bottom: 2rem;
+    max-width: var(--size-perfil-image);
+    border-radius: 50%;
 }
 
 .header__list {
@@ -91,14 +129,15 @@ p {
 }
 
 .main__title {
+    color: var(--color-text);
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 7rem;
 }
 
 .social {
-    border-top: 1px solid var(--color-text);
-    padding-top: 2rem;
-    margin-top: 2rem;
-    font-size: 1.4rem;
+    margin-top: 3rem;
+}
+
+.highlight {
+
 }
