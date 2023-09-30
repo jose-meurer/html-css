@@ -1,0 +1,114 @@
+:root {
+    --color-transparent-black: rgba(0, 0, 0, 0.568);
+}
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ccc;
+    min-height: 100vh;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+    /* font-weight: 400; */
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 0 0 4px var(--color-transparent-black);
+}
+
+.gallery {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    padding: 20px;
+    gap: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 8px var(--color-transparent-black);
+}
+
+.gallery__card{
+    flex-basis: calc(25% - 10px); /* 25% do espaco da section - 10px do gap */
+    overflow: hidden;
+    position: relative;
+    outline: 1px solid var(--color-transparent-black);
+    flex-grow: 1; 
+}
+
+.gallery__card::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    opacity: 0.4;
+    inset: 0; /* Atalho para top, bottom, left e right */
+    pointer-events: none; 
+    /* Deixa invisivel este elemento para evento de click, possibilitando, neste caso, eventos de click no gallery__card */
+
+    transition: opacity 0.2s linear;
+}
+
+.gallery__card:hover::after {
+    opacity: 0;
+}
+
+.gallery__image {
+    width: 100%;
+    display: block;
+    transform: scale(1);
+
+    transition: transform 0.2s linear;
+}
+
+.gallery__card:hover .gallery__image {
+    transform: scale(1.25);
+}
+
+.gallery__description {
+    position: absolute;
+    padding: 1rem;
+    background-color: var(--color-transparent-black);
+    color: white;
+    letter-spacing: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    text-align: center;
+
+    transition: transform 0.2s linear; 
+}
+
+.gallery__card:hover .gallery__description {
+    transform: translate(0);
+}
