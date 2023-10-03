@@ -61,7 +61,7 @@ h4 {
   font-size: 1.8rem;
 }
 
-article{
+article {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -70,7 +70,7 @@ article + section {
   padding-top: 2rem;
 }
 
-section{
+section {
   padding-bottom: 2rem;
 }
 
@@ -82,7 +82,9 @@ select {
   width: 100%;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   background-color: silver;
   padding: 1.2rem;
   border-radius: 6px;
@@ -90,7 +92,8 @@ input, textarea, select {
   border: none;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: var(--color-secondary);
 }
 
@@ -151,8 +154,8 @@ label {
 
 .btn:hover,
 .btn:focus {
-    background-color: var(--color-text);
-    color: var(--color-primary);
+  background-color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .btn--stroke {
@@ -176,8 +179,8 @@ label {
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: rgb(201, 5, 5);
-    color: inherit;
+  background-color: rgb(201, 5, 5);
+  color: inherit;
 }
 
 .btn ~ .btn {
@@ -293,4 +296,42 @@ label {
 
 .form-quiz {
   width: calc(50% - var(--default-gap) / 2);
+}
+
+.default-table {
+  width: 100%;
+  font-size: 1.2em;
+  border-collapse: collapse;
+}
+
+.default-table th {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.default-table th,
+.default-table td {
+  padding: 1.5rem;
+}
+
+.default-table th:last-child,
+.default-table td:last-child {
+  text-align: right;
+}
+
+/* th:not(:first-child, :last-child), td:not(:first-child, :last-child) {
+  text-align: center;
+} */
+
+.line-table tr:not(tbody tr:last-child) {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.zebra-table tbody tr:nth-child(2n + 1) {
+  background-color: var(--color-secondary);
+}
+
+.vertical-line td:not(:last-child),
+.vertical-line th:not(:last-child) {
+  border-right: 1px solid var(--color-primary);
 }
