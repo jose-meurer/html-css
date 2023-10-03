@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus components</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="wrapperContainer-title justify-right">
+          <a href="#">
+            <img class="header__image" src="images/perfil.png" alt="Imagem de perfil" />
+          </a>
+        </div>
+
+        <ul class="header__list">
+          <li>
+            <a class="header__list-item" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="tipografia.html">Tipografia</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="cards.html">Cards</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="lists.html">Listas</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="forms.html">Formulário</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="buttons.html">Botões</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="tables.html">Tabelas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- header end -->
+
+    <main class="main">
+      <div class="container">
+        <div class="wrapperContainer-title">
+          <h1 class="main__title">Meus Componentes</h1>
+        </div>
+
+        <article class="wrapperContainer highlight">
+          <h2>Botões</h2>
+          <p>Inputs (entrada de dados) permitem o usuário interagir com a aplicação ou site e inserir conteúdo e dados.</p>
+          <p>Normalmente são usados em formulários, mas não somente, pois podem na verdade ser links com aparência de botões.</p>
+        </article>
+
+        <section>      
+            <div class="row">
+                <article>
+                    <h3>Botão normal</h3>
+                    <button class="btn">Button</button>
+                    <button class="btn btn--big">Button</button>
+                </article>
+
+                <article>
+                    <h3>Botão outline</h3>
+                    <button class="btn btn--stroke">Button</button>
+                    <button class="btn btn--stroke btn--big">Button</button>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <article>
+                    <h3>Botão Full</h3>
+                    <button class="btn btn--full">Button</button>
+                    <button class="btn btn--full btn--big">Button</button>
+                </article>
+                <article>
+                    <h3>Botão Full outline</h3>
+                    <button class="btn btn--stroke btn--full">Button</button>
+                    <button class="btn btn--stroke btn--full btn--big">Button</button>
+                </article>
+            </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
