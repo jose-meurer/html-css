@@ -114,8 +114,8 @@ label {
 }
 
 .container {
+  width: 100%;
   max-width: 2200px;
-  margin-left: var(--size-header);
   padding: 0 4rem 4rem 4rem;
 }
 
@@ -193,10 +193,9 @@ label {
 }
 
 .header {
-  position: fixed;
-  inset: 0 auto 0 0;
   width: var(--size-header);
   background-color: var(--color-secondary);
+  flex: 0 0 auto;
 }
 
 /* Pensar em solucao melhor para linhar imagem perfil com titulo da sessao */
@@ -211,6 +210,9 @@ label {
 }
 
 .header__nav {
+  position: sticky;
+  top: 0;
+  left: 0;
   padding: 0 2rem;
   text-align: end;
   width: 100%;
