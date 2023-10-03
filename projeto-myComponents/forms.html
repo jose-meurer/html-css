@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus components</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="wrapperContainer-title justify-right">
+          <a href="#">
+            <img class="header__image" src="images/perfil.png" alt="Imagem de perfil" />
+          </a>
+        </div>
+
+        <ul class="header__list">
+          <li>
+            <a class="header__list-item" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="tipografia.html">Tipografia</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="cards.html">Cards</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="lists.html">Listas</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="forms.html">Formulário</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="buttons.html">Botões</a>
+          </li>
+          <li>
+            <a class="header__list-item" href="tables.html">Tabelas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- header end -->
+
+    <main class="main">
+      <div class="container">
+        <div class="wrapperContainer-title">
+          <h1 class="main__title">Meus Componentes</h1>
+        </div>
+
+        <section>
+          <h2>Entre em contato</h2>
+
+          <div class="row">
+            <form action="">
+              <div class="row">
+                <div>
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name" placeholder="Digite seu nome completo" required autofocus />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Digite seu email" required />
+                </div>
+              </div>
+
+              <div>
+                <label for="msg">Digite sua mensagem</label>
+                <textarea name="msg" id="msg" rows="10" placeholder="Era uma vez..." required></textarea>
+              </div>
+
+              <input class="btn" type="submit" value="Enviar" />
+            </form>
+
+            <div>
+              <address>
+                <p><b> Endereço</b> 1234 Somewhere Rd. Nashville, TN 00000 United States</p>
+                <p><b> Telefone</b> 000-000-000</p>
+                <p><b> Email</b> email@server.com</p>
+              </address>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Quiz</h2>
+          <form class="form-quiz" action="">
+            <label for="language">Qual é sua linguagem preferida?</label>
+            <select name="lang" id="language" required>
+              <option value="null">Selecione</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">Javascript</option>
+              <option value="php">PHP</option>
+            </select>
+
+            <label
+              >Baixa Prioridade
+              <input type="radio" name="priority" value="low" required/>
+            </label>
+
+            <label
+              >Média Prioridade
+              <input type="radio" name="priority" value="medium" required/>
+            </label>
+
+            <label
+              >Alta Prioridade
+              <input type="radio" name="priority" value="high" required/>
+            </label>
+
+            <label>
+              <input type="checkbox" name="copy"/>
+              Envie me uma cópia
+            </label>
+
+            <label>
+              <input type="checkbox" name="not-robot" required />
+              Não sou um robô
+            </label>
+
+            <div class="row">
+              <input class="btn btn-secondary" type="reset" value="Limpar" />
+              <input class="btn" type="submit" value="Enviar" />
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
