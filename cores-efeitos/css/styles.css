@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #e10f0f;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(to top, blue, red), url(../images/tile.png);
+  background-attachment: fixed;
+  background-blend-mode: color;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode */
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cores {
+  width: 40%;
+  min-height: 200px;
+  border: 8px dashed color-mix(in srgb, var(--primary-color), transparent 65%);
+  margin: 20px auto;
+  padding: 26px;
+}
+
+section {
+  counter-reset: contador;
+}
+
+.cores {
+  counter-increment: contador;
+}
+
+.cores::before {
+  content: "--" counter(contador) "--";
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.cores:nth-of-type(2) {
+  background-color: color-mix(in srgb, blue, transparent);
+  background-clip: content-box;
+}
+
+.cores:nth-of-type(3) {
+  background-image: linear-gradient(to top, transparent, hsl(90, 100%, 90%) 90%);
+  background-clip: padding-box;
+}
+
+.cores:nth-of-type(3):hover {
+  background-image: linear-gradient(to top, transparent, hsl(90, 100%, 70%) 90%);
+}
+
+.cores:nth-of-type(4) {
+  background-image: linear-gradient(to top right, blue 30%, red 60%, transparent 95%);
+  background-clip: padding-box;
+}
+
+.cores:nth-of-type(5) {
+  background-image: radial-gradient(blue, red);
+}
+
+.cores:nth-of-type(6) {
+  background-image: radial-gradient(circle, transparent 10%, green 30%, yellow);
+}
+
+.cores:nth-of-type(7) {
+  background-image: radial-gradient(ellipse, transparent 10%, green 30%, yellow);
+  /* Ellipse é o padrão */
+}
+
+.cores:nth-of-type(8) {
+  background-image: radial-gradient(circle at center bottom, blue, hsl(172, 100%, 90%));
+  background-clip: padding-box;
+  color: white;
+}
+
+.cores:nth-of-type(9) {
+  background-image: radial-gradient(ellipse at 20% 50%, blue, hsl(309, 100%, 90%));
+  background-clip: padding-box;
+  color: white;
+}
+
+.cores:nth-of-type(10) {
+    background-image: radial-gradient(closest-corner at 50px 20px, blue, #f008);
+    /* closest-corner = canto mais proximo */
+}
+
+.cores:nth-of-type(11) {
+    background-image: radial-gradient(farthest-corner at 50px 20px, blue, #f008);
+    /* farthest-corner = canto mais distante */
+}
+
+.cores:nth-of-type(12) {
+    background-image: radial-gradient(closest-side at 50px 20px, blue, #f008);
+    /* closest-side = lado mais proximo */
+}
+
+.cores:nth-of-type(13) {
+    background-image: radial-gradient(farthest-side at 50px 20px, blue, #f008);
+    /* farthest-side = lado mais distante */
+}
+
+.cores:nth-of-type(14) {
+    background-image: radial-gradient(circle farthest-side at 50px 20px, blue, #f008);
+    /* circle até lado mais distante */
+}
+
+.cores:nth-of-type(15) {
+    background-image:
+        radial-gradient(circle farthest-side at 50px 20px, #00F8, #f008),
+        radial-gradient(circle farthest-corner at bottom right, yellow, transparent);
+}
+
+.cores:nth-of-type(16) {
+    background-image:
+        radial-gradient(at top, #00F8, #f008),
+        radial-gradient(at bottom, yellow, transparent);
+}
+
+.cores:nth-of-type(17) {
+    background-image: conic-gradient(from 45deg, red, blue , green, red)
+}
+
+.cores:nth-of-type(18) {
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+}
+
+.cores:nth-of-type(19) {
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    aspect-ratio: 1; /* Muda a proporção da altura x largura, igual a tela 16 / 9 */
+
+    transition: filter 20s linear;
+}
+
+.cores:nth-of-type(19):hover {
+    filter: hue-rotate(10turn); /* 10 voltas completas */
+}
+
+.cores:nth-of-type(20) {
+    background-image: repeating-linear-gradient(to top left, blue 0px, blue 1px, transparent 1px, transparent 6px),
+    repeating-linear-gradient(to bottom right, red 0px, red 1px, transparent 1px, transparent 6px);
+    background-color: #ff0;
+}
