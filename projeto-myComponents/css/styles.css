@@ -263,6 +263,23 @@ label {
   margin-top: 3rem;
 }
 
+.social a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-style: normal;
+
+  transition: color 0.2s linear;
+}
+
+.social a:hover, .social a:focus {
+  color: var(--color-primary);
+}
+
+.social a ~ a {
+ margin-left: 2rem;
+
+}
+
 .card {
   max-width: 740px;
   background-color: var(--color-secondary);
@@ -336,4 +353,14 @@ label {
 .vertical-line td:not(:last-child),
 .vertical-line th:not(:last-child) {
   border-right: 1px solid var(--color-primary);
+}
+
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 1;
+  stroke: var(--color-primary);
+  fill: currentColor;
+  /* vertical-align: middle; */
 }

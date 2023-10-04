@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meus components</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- font-awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+
+    <!-- icomoon -->
+    <!-- <link rel="stylesheet" href="assets/icomoon/style.css"> -->
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -43,13 +48,32 @@
 
         <address class="social wrapperContainer">
           <h3>Venha conhecer minhas redes sociais</h3>
-          <a href="#">Youtube</a>
-          <a href="#">Instagram</a>
           <a href="#">
-            <i class="fa-brands fa-twitter fa-beat fa-lg"></i>
+            <svg class="icon">
+              <use xlink:href="assets/icomoon/symbol-defs.svg#icon-youtube"></use>
+            </svg>
+            Youtube</a
+          >
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="assets/icomoon/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+            Instagram</a
+          >
+          <a href="#">
+            <!-- <i class="fa-brands fa-twitter fa-beat fa-lg"></i> -->
+            <!-- font-awesome -->
+            <svg class="icon">
+              <use xlink:href="assets/icomoon/symbol-defs.svg#icon-twitter"></use>
+            </svg>
             Twitter
           </a>
-          <a href="#">Linkedin</a>
+          <a href="#">
+            <svg class="icon">
+              <use xlink:href="assets/icomoon/symbol-defs.svg#icon-linkedin2"></use>
+            </svg>
+            Linkedin</a
+          >
         </address>
       </div>
     </main>
