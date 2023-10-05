@@ -127,11 +127,14 @@ section {
 }
 
 .cores:nth-of-type(17) {
-    background-image: conic-gradient(from 45deg, red, blue , green, red)
+    background-image: conic-gradient(from 45deg, red, blue , green, red);
+    /* filter: blur(5px); */
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
 }
 
 .cores:nth-of-type(18) {
     background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    /* Conic sempre em deg */
 }
 
 .cores:nth-of-type(19) {
@@ -149,4 +152,34 @@ section {
     background-image: repeating-linear-gradient(to top left, blue 0px, blue 1px, transparent 1px, transparent 6px),
     repeating-linear-gradient(to bottom right, red 0px, red 1px, transparent 1px, transparent 6px);
     background-color: #ff0;
+}
+
+.cores:nth-of-type(21) {
+  background-image: repeating-conic-gradient(transparent 0deg, yellow 10deg, transparent 10deg, pink 20deg),
+  repeating-radial-gradient(blue 0%, transparent, red 20%);
+  background-attachment: scroll, fixed;
+}
+
+.cores:nth-of-type(22) {
+  background-image: repeating-radial-gradient(red 0%, blue, transparent 15%),
+  repeating-linear-gradient(to top right, yellow, green);
+  background-attachment: fixed, scroll;
+}
+
+.cores:nth-of-type(23) {
+  box-shadow: 10px 10px 6px rgb( 0 0 0 / .8);
+}
+
+.cores:nth-of-type(24) {
+  filter: drop-shadow(10px 10px 6px rgb( 0 0 0 / .8));
+}
+
+.cores:nth-of-type(25) {
+  background-image: linear-gradient(to top right, transparent 50%, blue 50%);
+  filter: drop-shadow(10px 10px 6px rgb( 0,0,0));
+}
+
+.cores:nth-of-type(26) {
+  background-image: linear-gradient(to top right, transparent 50%, blue 50%);
+  box-shadow: 10px 10px 6px rgb( 0,0,0);
 }

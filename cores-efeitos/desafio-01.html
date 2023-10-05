@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio dos Cards</title>
+
+    <style>
+      :root {
+        --color-primary: hsl(357, 33%, 32%);
+      }
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        /* margin: 0; */
+      }
+
+      body {
+        padding: 20px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-primary);
+        margin: 0;
+        font-size: 0.85rem;
+      }
+
+      h2 {
+        font-weight: 400;
+      }
+
+      article {
+        width: 30%;
+        padding: 1rem 2rem;
+        background-image: linear-gradient(135deg, transparent 20px, white 20px);
+        filter: drop-shadow(0px 0px 6px black);
+        position: relative;
+      }
+
+      article::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 28px;
+        width: 28px;
+        filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.322));
+        background-image: linear-gradient(135deg, transparent 20px, #999999 20px);
+      }
+
+      .container {
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        gap: 2rem;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+
+      <article>
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aspernatur iure iste tempore minima recusandae ipsa suscipit molestiae molestias praesentium.</p>
+      </article>
+    </div>
+  </body>
+</html>
