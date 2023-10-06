@@ -1,0 +1,11 @@
+body {
+    color: black;
+    font-family: serif;
+}
+
+a::after {
+    /* att = Trazer atributos do html para o css */
+    content: "(" attr(href) ") -" attr(title) ")";
+    display: inline-block;
+    margin-left: .5em;
+}
