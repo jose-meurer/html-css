@@ -4,7 +4,7 @@ body {
 }
 
 a::after {
-    /* att = Trazer atributos do html para o css */
+    /* attr() = Trazer atributos do html para o css */
     content: "(" attr(href) ") -" attr(title) ")";
     display: inline-block;
     margin-left: .5em;
