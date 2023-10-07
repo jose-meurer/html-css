@@ -1,0 +1,12 @@
+@media screen and (min-width: 860px) and (orientation: landscape) {
+    /* landscape = horizontal > vertical / portrait = vertical > horizontal */
+    
+    .cards__container {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1 1 clamp(200px, 32%, 400px);
+        orientation: portrait;
+    }
+}
