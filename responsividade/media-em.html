@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        html {
+            /* font-size: 62.5%; */
+        }
+
+        body {
+            padding: 1px;
+            margin: 0;
+            font-size: 2rem;
+            min-height: 100vh;
+            background-image: repeating-linear-gradient(to right top, yellow 0%, yellow 2%, orange 4%);
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2 {
+            font-weight: lighter;
+        }
+
+        div {
+            outline: 2px solid red;
+            min-height: 80px;
+        }
+
+        div:nth-of-type(1) {
+            font-size: 16px;
+            padding: 16px;
+        }
+
+        div:nth-of-type(1) b {
+            font-size: 24px;
+        }
+
+        div:nth-of-type(2) {
+            background-color: yellow;
+            font-size: 1em;
+            padding: 1em;
+        }
+
+        div:nth-of-type(2) b {
+            font-size: 1.5em;
+        }
+
+        div:nth-of-type(3) {
+            background-color: yellow;
+            font-size: 1rem;
+            padding: 1em;
+        }
+
+        div:nth-of-type(3) b {
+            font-size: 1.5rem;
+        }
+
+        @media screen and (min-width: 50em){
+            /* Sempre tentar usar a medida em EM */
+            body {
+                background-image: repeating-linear-gradient(to right top, hsl(240, 100%, 90%) 0%, hsl(240, 100%, 70%) 2%, hsl(0, 100%, 80%) 4%);
+            }
+        }
+    </style>
+  </head>
+  <body>
+
+
+    <h1>Unidades de medida em projetos responsivos</h1>
+
+    <h2>pixels</h2>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, quos.</p>
+        <p>Lorem ipsum dolor sit amet <b> consectetur adipisicing elit</b>. Quae minima, alias doloremque repellat quos
+            aut exercitationem cum non ab corporis!</p>
+    </div>
+
+    <h2>em</h2>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, quos.</p>
+        <p>Lorem ipsum dolor sit amet <b> consectetur adipisicing elit</b>. Quae minima, alias doloremque repellat quos
+            aut exercitationem cum non ab corporis!</p>
+    </div>
+
+    <h2>rem</h2>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, quos.</p>
+        <p>Lorem ipsum dolor sit amet <b> consectetur adipisicing elit</b>. Quae minima, alias doloremque repellat quos
+            aut exercitationem cum non ab corporis!</p>
+    </div>
+        
+  </body>
+</html>
