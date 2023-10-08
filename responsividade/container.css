@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: 2px solid #999;
+}
+
+.card__header img{
+    display: block;
+
+    width: 100%;
+    max-height: 10rem;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__body {
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+.card__body p {
+    margin: 0 0 1rem;
+}
+
+.card__cta {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: cadetblue;
+    padding: 0.75rem 1rem;
+    box-sizing: border-box;
+    display: inline-block;
+}
