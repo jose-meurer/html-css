@@ -4,12 +4,17 @@ body {
 
 .card {
     border: 2px solid #999;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .card__header img{
     display: block;
 
     width: 100%;
+    height: 100%;
     max-height: 10rem;
 
     object-fit: cover;
@@ -33,4 +38,38 @@ body {
     padding: 0.75rem 1rem;
     box-sizing: border-box;
     display: inline-block;
+    color: white;
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 50em){
+
+    .card {
+        flex-direction: row;
+    }
+
+    .card__body {
+        flex-grow: 1;
+    }
+
+    .card__header img {
+        max-height: initial;
+    }  
+}
+
+@media screen and (min-width:70em) {
+    .cardsContainer {
+        flex-direction: row;
+    }
+
+    .card__header img {
+        max-height: initial;
+    }  
+
+    /* Aula de amanha sobre containers, para definir flex-direction entre column e row, olhar o tamanho do container, e nao do viewport*/
 }
