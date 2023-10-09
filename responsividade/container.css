@@ -1,53 +1,94 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card {
-    border: 2px solid #999;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
+  border: 2px solid #999;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.card__header img{
-    display: block;
+.card__header img {
+  display: block;
 
-    width: 100%;
-    height: 100%;
-    max-height: 10rem;
+  width: 100%;
+  height: 100%;
+  max-height: 10rem;
 
-    object-fit: cover;
-    object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card__body {
-    padding: 1rem;
-    box-sizing: border-box;
-    background-color: #ccc;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #ccc;
 }
 
 .card__body p {
-    margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
 
 .card__cta {
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: cadetblue;
-    padding: 0.75rem 1rem;
-    box-sizing: border-box;
-    display: inline-block;
-    color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: cadetblue;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  display: inline-block;
+  color: white;
 }
 
 .cardsContainer {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 50em){
+/* .cardWrapper,
+main {
+  container-type: inline-size;
+} */
+
+.cardWrapper {
+  /* container-name:cardWrapper; */
+  container: cardWrapper / inline-size;
+}
+
+main {
+  /* container-name:main; */
+  container: main / inline-size; /* Atalho para container-name / container-type */
+}
+
+@container cardWrapper (min-width: 50em) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card__body {
+    flex-grow: 1;
+  }
+
+  .card__header img {
+    max-height: initial;
+  }
+}
+
+/* O container precisa ser o pai ou acima do objeto selecionado, se for filho, nao irá ter efeitos */
+
+@container main (min-width:70em) {
+  .cardsContainer {
+    flex-direction: row;
+  }
+
+  .cardWrapper {
+    flex-grow: 1;
+  }
+}
+
+/* @media screen and (min-width: 50em){
 
     .card {
         flex-direction: row;
@@ -60,9 +101,9 @@ body {
     .card__header img {
         max-height: initial;
     }  
-}
+} */
 
-@media screen and (min-width:70em) {
+/* @media screen and (min-width:70em) {
     .cardsContainer {
         flex-direction: row;
     }
@@ -71,5 +112,4 @@ body {
         max-height: initial;
     }  
 
-    /* Aula de amanha sobre containers, para definir flex-direction entre column e row, olhar o tamanho do container, e nao do viewport*/
-}
+} */
