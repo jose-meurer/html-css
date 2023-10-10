@@ -1,36 +1,50 @@
-@media screen and (min-width:50em) {
-    .header {
-        padding: 0 1rem;
-    }
+@media screen and (min-width: 50em) {
+  .header {
+    padding: 0 1.6rem;
+  }
 
-    .header .container {
-        display: flex;
-        justify-content: space-between;
-    }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .header__nav {
-        background-color: initial;
-    }
+  .header__nav {
+    background-color: initial;
+  }
 
-    .header__nav {
-        display: flex;
-        align-items: center;
-    }
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
 
-    li:has(a.header__navItem){
-        display: inline-block;
-    }
+  li:has(a.header__navItem) {
+    display: inline-block;
+  }
 
-    .header__navItem {
-        color: var(--color-header-nav);
-        font-weight: 400;
+  .header__navItem {
+    color: var(--color-primary);
+    font-weight: 400;
 
-        transition: transform var(--transition-time) linear;
-    }
+    transition: transform var(--transition-time) linear;
+  }
 
-    .header__navItem:hover {
-        background-color: color-mix(in srgb, var(--color-primary), white 80%);
-        transform: translateY(-5px);
-    }
-    
+  .header__navItem:hover {
+    color: white;
+    background-color: var(--color-secondary);
+    transform: translateY(-5px);
+  }
+
+  .heroBanner {
+    background-color: var(--color-primary);
+  }
+
+  .heroBanner__icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .heroBanner__title,
+  .heroBanner__subtitle {
+    color: white;
+  }
 }
