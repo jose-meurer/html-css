@@ -1,0 +1,37 @@
+@media screen and (min-width:50em) {
+    .header {
+        padding: 0 1.6rem;
+    }
+
+    .header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__nav {
+        background-color: transparent;
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__nav ul li{
+        display: inline-block;
+    }
+
+    .header__navItem {
+        color: var(--color-header-nav);
+        font-weight: 400;
+
+        transition: transform var(--transition-time) linear;
+    }
+
+    .header__navItem:hover, .header__navItem:focus {
+        color: white;
+        background-color: var(--color-header-nav);
+        transform: translateY(-5px);
+    }
+    
+}
