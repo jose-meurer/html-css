@@ -1,6 +1,8 @@
 :root {
 
-    --color-header-nav:#622574;
+    --color-primary:#622574;
+    --color-secondary: #ac51c8;
+    --color-light-blue: #00cccc;
 
     --transition-time: 0.2s;
 }
@@ -22,48 +24,83 @@ body {
   min-height: 100vh;
 }
 
+h1, h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 1.9em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
 .container {
     width: 100%;
     max-width: 105rem;
     margin: 0 auto;
 }
 
-.header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
 .header__logo {
-    align-self: center;
     padding: 0.5rem 0;
-}
-
-.header__logo img {
-    display: block;
+    text-align: center;
 }
 
 .header__nav {
-    background-color: var(--color-header-nav);
+    background-color: var(--color-primary);
     text-align: center;
 }
 
 .header__nav ul {
     list-style-type: none;
     list-style-position: inside;
-    padding: 0.5rem 0;
 }
 
 .header__navItem {
+    display: block;
     color: white;
     text-decoration: none;
-    display: inline-block;
-    padding: 1rem 2rem;
-
-    transition: transform var(--transition-time) linear;
+    padding: 1.5rem 2.5rem;
 }
 
-.header__navItem:hover, .header__navItem:focus {
-    background-color: color-mix(in srgb, var(--color-header-nav) , white 25%);
-    transform: translateX(5px);
+.header__navItem:hover {
+    background-color: var(--color-secondary);
+}
+
+.heroBanner {
+    text-align: center;
+    padding: 4rem 1.6rem;
+}
+
+.heroBanner__icon {
+    display: none;
+}
+
+.heroBanner__title {
+    margin-bottom: 2.5rem;
+    color: var(--color-primary);
+}
+
+.heroBanner__subtitle {
+    margin-bottom: 2rem;
+    color: var(--color-secondary);
+}
+
+.heroBanner__btn {
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-light-blue);
+    padding: 1rem 3rem;
+    border-radius: 6px;
+}
+
+.heroBanner__btn:hover {
+    background-color: #f1f1f1;
+    color: var(--color-light-blue);
+    outline: 2px solid var(--color-light-blue);
+    outline-offset: -2px;
 }

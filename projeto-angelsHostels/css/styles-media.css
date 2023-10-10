@@ -1,15 +1,15 @@
 @media screen and (min-width:50em) {
     .header {
-        padding: 0 1.6rem;
+        padding: 0 1rem;
     }
 
     .header .container {
-        flex-direction: row;
+        display: flex;
         justify-content: space-between;
     }
 
     .header__nav {
-        background-color: transparent;
+        background-color: initial;
     }
 
     .header__nav {
@@ -17,7 +17,7 @@
         align-items: center;
     }
 
-    .header__nav ul li{
+    li:has(a.header__navItem){
         display: inline-block;
     }
 
@@ -28,9 +28,8 @@
         transition: transform var(--transition-time) linear;
     }
 
-    .header__navItem:hover, .header__navItem:focus {
-        color: white;
-        background-color: var(--color-header-nav);
+    .header__navItem:hover {
+        background-color: color-mix(in srgb, var(--color-primary), white 80%);
         transform: translateY(-5px);
     }
     
