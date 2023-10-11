@@ -63,8 +63,9 @@ h2 {
 .header__navItem {
   display: block;
   color: white;
+  letter-spacing: 1px;
   text-decoration: none;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 2rem;
 }
 
 .header__navItem:hover {
@@ -94,6 +95,7 @@ h2 {
 
 .heroBanner__btn {
   font-size: 1.1em;
+  font-weight: 400;
   display: inline-block;
   text-decoration: none;
   color: white;
