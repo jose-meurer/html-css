@@ -2,14 +2,16 @@
   --color-primary: #622574;
   --color-secondary: hsl(286, 52%, 55%);
   --color-light-blue: #00cccc;
-  --color-section-background: #e4e4e4;
+  --color-section-background: #F0EFF8;
 
+  --row-gap: 1rem;
   --transition-time: 0.2s;
 }
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -43,6 +45,21 @@ h2 {
   width: 100%;
   max-width: 105rem;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--row-gap);
+}
+
+.col {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.col-sm-12 {
+  width: 100%;
 }
 
 .header__logo {
@@ -105,8 +122,34 @@ h2 {
 }
 
 .heroBanner__btn:hover {
-  background-color: #f1f1f1;
+  background-color: #F0EFF8;
   color: var(--color-light-blue);
-  outline: 2px solid var(--color-light-blue);
-  outline-offset: -2px;
+  outline: 4px solid var(--color-light-blue);
+  outline-offset: -4px;
+}
+
+.middleContent {
+  background-color: var(--color-section-background);
+  text-align: center;
+  padding: 2rem 1.6rem;
+}
+
+.middleContent a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.middleContent span[class^="icon"] {
+  font-size: 3.5em;
+  color: var(--color-primary);
+}
+
+.middleContent__title {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.middleContent article {
+  padding: 2rem 2rem;
 }

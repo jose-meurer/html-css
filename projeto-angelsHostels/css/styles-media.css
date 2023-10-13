@@ -1,4 +1,17 @@
+
+/* 
+  min-width: 0      -> col-sm 
+  min-width: 50em   -> col-md 
+  min-width: 56em   -> col-lg 
+  min-width: 75em   -> col-xl 
+*/
+
 @media screen and (min-width: 50em) {
+
+  .col-md-6 {
+    width: calc(50% - var(--row-gap));
+  }
+  
   .header {
     padding: 0 1.6rem;
   }
@@ -66,16 +79,26 @@
       margin-bottom: 4rem;
       width: 75%;
     }
+
+    .heroBanner__btn {
+      padding: 1.5rem 4rem;
+    }
   }
 
   @media screen and (min-width: 75em) {
+
+    .col-xl-3 {
+      width: calc(25% - var(--row-gap));
+    }
+
     .heroBanner {
       background-image: linear-gradient(to bottom, transparent 30%, var(--color-primary)), url(../images/bg_topo_1600x1374.jpg);
       background-blend-mode: hard-light;
-      background-position: center top;
+      background-position: center 30%;
+      background-size: cover;
       max-height: 70vh;
       width: 100%;
-      max-width: 1500px;
+      /* max-width: 1500px; */
       margin: auto;
     }
 
