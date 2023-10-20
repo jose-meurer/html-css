@@ -187,6 +187,10 @@
         height: 105px;
         background-image: linear-gradient(to bottom right, transparent 74px, red 74px);
       }
+
+      .test1:has(h2+p) h2{
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -237,6 +241,12 @@
 
   <div class="div-border">
     <div>Iniciar</div>
+  </div>
+
+
+  <div class="test1">
+    <h2>Teste</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, nemo?</p>
   </div>
 </body>
 </html>

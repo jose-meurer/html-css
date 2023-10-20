@@ -4,7 +4,7 @@
   --color-light-blue: #00cccc;
   --color-section-background: #F0EFF8;
 
-  --row-gap: 2rem;
+  --default-gap: 2rem;
   --transition-time: 0.2s;
 }
 
@@ -50,7 +50,7 @@ h2 {
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--row-gap);
+  gap: var(--default-gap);
 }
 
 .col {
@@ -155,7 +155,7 @@ h2 {
 }
 
 .mainContent {
-  padding: 2rem 1.6rem;
+  padding: 4rem 1.6rem;
   
 }
 
@@ -167,6 +167,8 @@ h2 {
 
 .mainContent__card {
   flex: 1 1 auto;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .mainContent__img img {
@@ -178,15 +180,9 @@ h2 {
   object-fit: cover;
 }
 
-.mainContent__img {
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
-}
-
 .mainContent__content {
   background-color: var(--color-section-background);
   padding: 1rem 1.5rem;
-  border-radius: 0 0 8px 8px;
 }
  
 .mainContent__title {
@@ -207,4 +203,15 @@ h2 {
 .mainContent__title::first-letter {
   font-size: 1.5em;
   color: var(--color-light-blue);
+}
+
+.footer {
+  background-color: #1d2738;
+  color: #d6d6d6;
+  padding: 4rem;
+  text-align: center;
+}
+
+.footer p+p {
+  margin-top: 1rem;
 }

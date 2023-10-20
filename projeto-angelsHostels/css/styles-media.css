@@ -8,11 +8,10 @@
 */
 
 @media screen and (min-width: 50em) {
-
   .col-md-6 {
-    width: calc(50% - var(--row-gap));
+    width: calc(50% - var(--default-gap));
   }
-  
+
   .header {
     padding: 0 1.6rem;
   }
@@ -61,72 +60,74 @@
   .heroBanner__subtitle {
     color: white;
   }
+}
 
-  @media screen and (min-width: 56em) {
-
-    .col-lg-6 {
-      width: calc(50% - var(--row-gap));
-    }
-
-    .heroBanner {
-      background-image: url(../images/bg_topo_1198x670.jpg);
-      /* aspect-ratio: 1198/670; */
-      aspect-ratio: 20 / 9;
-      background-repeat: no-repeat;
-      /* background-size: cover; */
-
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-    }
-
-    .heroBanner .container {
-      margin: initial;
-      margin-bottom: 4rem;
-      width: 75%;
-    }
-
-    .heroBanner__btn {
-      padding: 1.5rem 4rem;
-    }
-
+@media screen and (min-width: 56em) {
+  .col-lg-6 {
+    width: calc(50% - var(--default-gap));
   }
 
-  @media screen and (min-width: 75em) {
+  .heroBanner {
+    background-image: url(../images/bg_topo_1198x670.jpg);
+    /* aspect-ratio: 1198/670; */
+    aspect-ratio: 20 / 9;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
 
-    .col-xl-3 {
-      width: calc(25% - var(--row-gap));
-    }
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-    .col-xl-6 {
-      width: calc(50% - var(--row-gap));
-    }
+  .heroBanner .container {
+    margin: initial;
+    margin-bottom: 4rem;
+    width: 75%;
+  }
 
-    .heroBanner {
-      background-image: linear-gradient(to bottom, transparent 30%, var(--color-primary)), url(../images/bg_topo_1600x1374.jpg);
-      background-blend-mode: hard-light;
-      background-position: center 30%;
-      background-size: cover;
-      max-height: 70vh;
-      width: 100%;
-      /* max-width: 1500px; */
-      margin: auto;
-    }
+  .heroBanner__btn {
+    padding: 1.5rem 4rem;
+  }
+}
 
-    .heroBanner .container {
-      width: 50%;
-    }
+@media screen and (min-width: 75em) {
+  .col-xl-3 {
+    width: calc(25% - var(--default-gap));
+  }
 
-    .heroBanner__icon {
-      width: 14rem;
-    }
+  .col-xl-6 {
+    width: calc(50% - var(--default-gap));
+  }
+
+  .heroBanner {
+    background-image: linear-gradient(to bottom, transparent 30%, var(--color-primary)), url(../images/bg_topo_1600x1374.jpg);
+    background-blend-mode: hard-light;
+    background-position: center 30%;
+    background-size: cover;
+    max-height: 70vh;
+    width: 100%;
+    /* max-width: 1500px; */
+    margin: auto;
+  }
+
+  .heroBanner .container {
+    width: 50%;
+  }
+
+  .heroBanner__icon {
+    width: 14rem;
+  }
+
+  .mainContent .row{ 
+
+    row-gap: var(--default-gap);
+
   }
 }
 
 /* Containers */
 
-@Container mainContentContainer (min-width: 37.5em) and (max-width: 52.9em) {
-
+@container mainContentContainer (min-width: 37.5em) {
   .mainContent__card {
     display: flex;
   }
@@ -136,12 +137,7 @@
   }
 
   .mainContent__img {
-    min-width: 30rem;
-    border-radius: 8px 0 0 8px;
-  }
-
-  .mainContent__content{
-    border-radius: 0 8px 8px 0;
+    min-width: 35%;
   }
 
   .mainContent__content p {
