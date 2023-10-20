@@ -1,3 +1,4 @@
+/* Medias */
 
 /* 
   min-width: 0      -> col-sm 
@@ -62,6 +63,11 @@
   }
 
   @media screen and (min-width: 56em) {
+
+    .col-lg-6 {
+      width: calc(50% - var(--row-gap));
+    }
+
     .heroBanner {
       background-image: url(../images/bg_topo_1198x670.jpg);
       /* aspect-ratio: 1198/670; */
@@ -83,12 +89,17 @@
     .heroBanner__btn {
       padding: 1.5rem 4rem;
     }
+
   }
 
   @media screen and (min-width: 75em) {
 
     .col-xl-3 {
       width: calc(25% - var(--row-gap));
+    }
+
+    .col-xl-6 {
+      width: calc(50% - var(--row-gap));
     }
 
     .heroBanner {
@@ -109,5 +120,31 @@
     .heroBanner__icon {
       width: 14rem;
     }
+  }
+}
+
+/* Containers */
+
+@Container mainContentContainer (min-width: 37.5em) and (max-width: 52.9em) {
+
+  .mainContent__card {
+    display: flex;
+  }
+
+  .mainContent__img img {
+    max-height: initial;
+  }
+
+  .mainContent__img {
+    min-width: 30rem;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .mainContent__content{
+    border-radius: 0 8px 8px 0;
+  }
+
+  .mainContent__content p {
+    -webkit-line-clamp: 6;
   }
 }

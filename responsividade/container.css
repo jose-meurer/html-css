@@ -39,6 +39,7 @@ body {
   box-sizing: border-box;
   display: inline-block;
   color: white;
+  border-radius: 8px;
 }
 
 .cardsContainer {

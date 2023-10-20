@@ -4,7 +4,7 @@
   --color-light-blue: #00cccc;
   --color-section-background: #F0EFF8;
 
-  --row-gap: 1rem;
+  --row-gap: 2rem;
   --transition-time: 0.2s;
 }
 
@@ -152,4 +152,59 @@ h2 {
 
 .middleContent article {
   padding: 2rem 2rem;
+}
+
+.mainContent {
+  padding: 2rem 1.6rem;
+  
+}
+
+.mainContent .row{
+  row-gap: 3rem;
+
+  container: mainContentContainer / inline-size;
+}
+
+.mainContent__card {
+  flex: 1 1 auto;
+}
+
+.mainContent__img img {
+  width: 100%;
+  height: 100%;
+  max-height: 30rem;
+
+  display: block;
+  object-fit: cover;
+}
+
+.mainContent__img {
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.mainContent__content {
+  background-color: var(--color-section-background);
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 8px 8px;
+}
+ 
+.mainContent__title {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+}
+
+.mainContent__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.mainContent__title::first-letter {
+  font-size: 1.5em;
+  color: var(--color-light-blue);
 }
