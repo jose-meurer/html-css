@@ -118,10 +118,8 @@
     width: 14rem;
   }
 
-  .mainContent .row{ 
-
+  .mainContent .row {
     row-gap: var(--default-gap);
-
   }
 }
 
@@ -134,13 +132,18 @@
 
   .mainContent__img img {
     max-height: initial;
+    height: 20rem;
   }
 
   .mainContent__img {
-    min-width: 35%;
+    flex: 0 0 35%;
+  }
+
+  .mainContent__content {
+    flex-grow: 1;
   }
 
   .mainContent__content p {
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 5;
   }
 }

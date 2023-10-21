@@ -2,7 +2,7 @@
   --color-primary: #622574;
   --color-secondary: hsl(286, 52%, 55%);
   --color-light-blue: #00cccc;
-  --color-section-background: #F0EFF8;
+  --color-section-background: #f0eff8;
 
   --default-gap: 2rem;
   --transition-time: 0.2s;
@@ -122,7 +122,7 @@ h2 {
 }
 
 .heroBanner__btn:hover {
-  background-color: #F0EFF8;
+  background-color: #f0eff8;
   color: var(--color-light-blue);
   outline: 4px solid var(--color-light-blue);
   outline-offset: -4px;
@@ -134,7 +134,7 @@ h2 {
   padding: 2rem 1.6rem;
 }
 
-.middleContent a{
+.middleContent a {
   text-decoration: none;
   color: inherit;
 }
@@ -156,10 +156,9 @@ h2 {
 
 .mainContent {
   padding: 4rem 1.6rem;
-  
 }
 
-.mainContent .row{
+.mainContent .row {
   row-gap: 3rem;
 
   container: mainContentContainer / inline-size;
@@ -175,7 +174,6 @@ h2 {
   width: 100%;
   height: 100%;
   max-height: 30rem;
-
   display: block;
   object-fit: cover;
 }
@@ -184,7 +182,7 @@ h2 {
   background-color: var(--color-section-background);
   padding: 1rem 1.5rem;
 }
- 
+
 .mainContent__title {
   font-size: 1.3em;
   text-transform: uppercase;
@@ -212,6 +210,6 @@ h2 {
   text-align: center;
 }
 
-.footer p+p {
+.footer p + p {
   margin-top: 1rem;
 }
