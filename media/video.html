@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+
+    <style>
+        ::cue {
+            color: yellow;
+            font-size: 1.6em;
+            background-color: #666a;
+        }
+    </style>
+  </head>
+  <body style="background-color: #5f5f5f">
+    <video controls autoplay muted loop>
+      <!-- Nome do type = mimetype -->
+      <!-- https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Basics_of_HTTP/MIME_types -->
+      <source src="media/video.mp4" type="video/mp4" />
+      <source src="media/video.ogv" type="video/ogv" />
+      <source src="media/video.webm" type="video/webm" />
+
+      <!-- Legenda -->
+      <track src="media/track.pt.vtt" kind="captions" srclang="pt" label="Portugues" default/>
+      <track src="media/track.en.vtt" kind="captions" srclang="en" label="English" />
+
+      <p>O seu navegador nao suporta o recurso de video</p>
+    </video>
+  </body>
+</html>
