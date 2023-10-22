@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe</title>
+
+    <style>
+      .iframe {
+        display: flex;
+      }
+
+      iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iframe</h1>
+
+    <div class="iframe">
+      <iframe src="video.html" frameborder="0"></iframe>
+
+      <iframe
+        src="https://www.youtube.com/embed/bVaTVq8pSmc?si=AadLUb0IeMRC3lAY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <!-- Atributos html nao precisa por px -->
+    </div>
+  </body>
+</html>
